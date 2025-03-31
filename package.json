@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/vite": "^4.0.0",
+        "autoprefixer": "^10.4.2",
+        "axios": "^1.8.2",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.4.31",
+        "sass": "^1.86.0",
+        "tailwindcss": "^3.1.0",
+        "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "aos": "^2.3.4",
+        "bootstrap": "^5.3.3",
+        "jquery": "npm:jQuery@^1.7.4",
+        "jQuery": "^1.7.4",
+        "jquery-ui": "^1.14.1",
+        "jquery.marquee": "^1.6.1",
+        "select2": "^4.1.0-rc.0",
+        "slick-carousel": "^1.8.1",
+        "vanilla-tilt": "^1.8.1",
+        "wow.js": "^1.2.2",
+        "wowjs": "^1.1.3"
+    }
+}

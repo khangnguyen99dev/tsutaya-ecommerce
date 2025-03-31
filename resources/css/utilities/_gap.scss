@@ -1,0 +1,7 @@
+// Gap Css
+@use '../abstracts/variable' as *;
+@each $property, $value in $spaces {
+  .gap-#{$property} {
+    gap: var(--size-#{$property}) !important;
+  }
+}
