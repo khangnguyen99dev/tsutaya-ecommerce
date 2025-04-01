@@ -14,6 +14,7 @@ Route::get('/blog', [PageController::class, 'blogPage'])->name('blog');
 Route::get('/blog-detail', [PageController::class, 'blogDetailPage'])->name('blog-detail');
 Route::get('/contact', [PageController::class, 'contactPage'])->name('contact');
 Route::get('/account', [PageController::class, 'accountPage'])->name('account');
+Route::get('/wishlist', [PageController::class, 'wishlistPage'])->name('wishlist');
 
 // Admin Routes
 Route::prefix('admin')->middleware(['auth'])->group(function () {

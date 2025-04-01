@@ -14,7 +14,14 @@
     @stack('styles')
 </head>
 <body>
-   @yield('content')
+    <!-- Header -->
+    @include('layouts.partials.header')
+
+    <!-- Content -->
+    @yield('content')
+
+    <!-- Footer -->
+    @include('layouts.partials.footer')
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="{{ mix('js/app.js') }}"></script>
