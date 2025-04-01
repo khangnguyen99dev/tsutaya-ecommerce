@@ -5,7 +5,7 @@ const tailwindcss = require('tailwindcss');
 
 
 mix.js('resources/js/app.js', 'public/js')
-   .scss('resources/css/app.scss', 'public/css')
+   .sass('resources/css/main.scss', 'public/css')
    .css('resources/css/app.css', 'public/css')
    .copy('resources/images', 'public/images')
    .version()
