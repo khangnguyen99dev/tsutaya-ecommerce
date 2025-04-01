@@ -2,11 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\PageController;
 
 // Frontend Routes
-Route::get('/', [HomeController::class, 'index'])->name('home');
-
+Route::get('/', [PageController::class, 'homePage'])->name('home');
 
 // Admin Routes
 Route::prefix('admin')->middleware(['auth'])->group(function () {
