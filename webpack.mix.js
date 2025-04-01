@@ -1,12 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
 const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
+
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/css/app.scss', 'public/css')
+   .scss('resources/css/app.scss', 'public/css')
+   .css('resources/css/app.css', 'public/css')
    .copy('resources/images', 'public/images')
    .version()
    .options({
+      postCss: [tailwindcss('./tailwind.config.js')],
       processCssUrls: false
    })
    .autoload({

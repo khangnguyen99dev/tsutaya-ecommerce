@@ -2,7 +2,7 @@
 window.$ = window.jQuery = require('jquery');
 
 // main css
-require("../css/app.scss");
+require("../css/app.css");
 
 // Import AOS globally
 window.AOS = require('aos');

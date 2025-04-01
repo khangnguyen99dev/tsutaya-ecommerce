@@ -2863,10 +2863,10 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
-/***/ "./resources/css/app.scss":
-/*!********************************!*\
-  !*** ./resources/css/app.scss ***!
-  \********************************/
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2896,7 +2896,7 @@ __webpack_require__(/*! ./modules/scroll-to-top-button.js */ "./resources/js/mod
 window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(/*! jquery */ "jquery");
 
 // main css
-__webpack_require__(/*! ../css/app.scss */ "./resources/css/app.scss");
+__webpack_require__(/*! ../css/app.css */ "./resources/css/app.css");
 
 // Import AOS globally
 window.AOS = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
@@ -4373,7 +4373,7 @@ module.exports = jQuery;
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
