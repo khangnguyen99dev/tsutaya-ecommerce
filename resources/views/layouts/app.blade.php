@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/css/main.scss', 'resources/js/app.js'])
+    @vite(['resources/css/client/app.css', 'resources/css/client/main.scss', 'resources/js/client/app.js'])
     @livewireStyles
     @stack('styles')
 </head>

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\PageController;
+use App\Http\Controllers\Clients\PageController;
 
 // Frontend Routes
 Route::get('/', [PageController::class, 'homePage'])->name('home');
@@ -19,6 +19,9 @@ Route::get('/wishlist', [PageController::class, 'wishlistPage'])->name('wishlist
 require_once __DIR__ . '/auth.php';
 
 // Admin routes
-Route::prefix('admin')->middleware([])->group(function () {
-    require_once __DIR__ . '/admin.php';
-});
+Route::prefix('admin')
+    ->name("admin.")
+    ->middleware([])
+    ->group(function () {
+        require_once __DIR__ . '/admin.php';
+    });
