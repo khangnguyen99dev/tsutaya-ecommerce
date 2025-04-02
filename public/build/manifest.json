@@ -1,0 +1,55 @@
+{
+  "_jquery-CMRL2V9f.js": {
+    "file": "assets/jquery-CMRL2V9f.js",
+    "name": "jquery"
+  },
+  "node_modules/wowjs/dist/wow.js": {
+    "file": "assets/wow-psmbVWZF.js",
+    "name": "wow",
+    "src": "node_modules/wowjs/dist/wow.js",
+    "isDynamicEntry": true
+  },
+  "resources/css/admin/app.css": {
+    "file": "assets/app-CF0kqhcc.css",
+    "src": "resources/css/admin/app.css",
+    "isEntry": true
+  },
+  "resources/css/admin/main.scss": {
+    "file": "assets/main-DP2rzg_V.js",
+    "name": "main",
+    "src": "resources/css/admin/main.scss",
+    "isEntry": true
+  },
+  "resources/css/client/app.css": {
+    "file": "assets/app-BsqtMCEk.css",
+    "src": "resources/css/client/app.css",
+    "isEntry": true
+  },
+  "resources/css/client/main.scss": {
+    "file": "assets/main-l0sNRNKZ.js",
+    "name": "main",
+    "src": "resources/css/client/main.scss",
+    "isEntry": true
+  },
+  "resources/js/admin/app.js": {
+    "file": "assets/app-CorKQHJP.js",
+    "name": "app",
+    "src": "resources/js/admin/app.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-CMRL2V9f.js"
+    ]
+  },
+  "resources/js/client/app.js": {
+    "file": "assets/app-Bt8wu2oe.js",
+    "name": "app",
+    "src": "resources/js/client/app.js",
+    "isEntry": true,
+    "imports": [
+      "_jquery-CMRL2V9f.js"
+    ],
+    "dynamicImports": [
+      "node_modules/wowjs/dist/wow.js"
+    ]
+  }
+}
