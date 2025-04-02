@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/css/main.scss', 'resources/js/app.js'])
     @livewireStyles
     @stack('styles')
 </head>
@@ -23,8 +23,6 @@
     <!-- Footer -->
     @include('layouts.partials.footer')
 
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="{{ mix('js/app.js') }}"></script>
    @livewireScripts
    @stack('scripts')
 </body>

@@ -4,7 +4,9 @@
     <!-- ============================ Banner Section start =============================== -->
     <div class="banner">
         <div class="container container-lg">
-            <div class="banner-item rounded-24 overflow-hidden relative arrow-center">
+            <div class="banner-item rounded-24 overflow-hidden relative arrow-center"
+            style="-webkit-mask-image: url(/images/bg/banner-bg2.png);mask-image: url(/images/bg/banner-bg2.png);"
+            >
                 <a href="#featureSection"
                     class="scroll-down w-84 h-84 text-center flex items-center justify-center bg-main-600 rounded-[50%] border border-5 text-white border-white !absolute left-[50%] translate-x-[-50%] bottom-0 hover-bg-main-800">
                     <span class="icon line-height-0"><i class="ph ph-caret-double-down"></i></span>
@@ -4492,7 +4494,9 @@
             <div class="row g-4 vendor-card-wrapper">
                 <div class="custom-2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto xl:w-4/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto"
                     data-aos="zoom-in" data-aos-duration="200">
-                    <div class="vendor-card text-center px-16 pb-24">
+                    <div class="vendor-card text-center px-16 pb-24"
+                    style="-webkit-mask-image: url(/images/shape/box-shape2.png);mask-image: url(/images/shape/box-shape2.png);"
+                    >
                         <div class="">
                             <img src="./images/thumbs/vendor-logo1.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Organic Market</h6>

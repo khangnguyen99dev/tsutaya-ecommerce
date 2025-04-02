@@ -323,7 +323,7 @@
             <!-- form Category/Search/Location -->
             <form action="#" class="flex items-center flex-wrap form-location-wrapper">
                 <div class="search-category flex h-48 select-border-r-0 radius-end-0 search-form md:flex hidden">
-                    <select class="js-example-basic-single border border-gray-200 border-r-0" name="state">
+                    <select class="js-example-basic-single border border-gray-200 border-r-0 select2" name="state">
                         <option value="1" selected disabled>All Categories</option>
                         <option value="1">Grocery</option>
                         <option value="1">Breakfast & Dairy</option>
@@ -351,7 +351,7 @@
                     <div class="line-height-1">
                         <span class="text-gray-600 text-xs">Your Location</span>
                         <div class="line-height-1">
-                            <select class="js-example-basic-single border border-gray-200 border-r-0" name="state">
+                            <select class="js-example-basic-single border border-gray-200 border-r-0 select2" name="state">
                                 <option value="1">Alabama</option>
                                 <option value="1">Alaska</option>
                                 <option value="1">Arizona</option>
