@@ -4,7 +4,7 @@
         <div class="footer-item-wrapper flex items-start flex-wrap">
             <div class="footer-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="footer-item__logo">
-                    <a href="index.html"> <img src="./images/logo/logo.png" alt="Image"></a>
+                    <a href="/"> <img src="./images/logo/logo.png" alt="Image"></a>
                 </div>
                 <p class="mb-24">We're Grocery Shop, an innovative team of food supliers.</p>
                 <div class="flex items-center gap-16 mb-16">
@@ -34,23 +34,18 @@
             <div class="footer-item" data-aos="fade-up" data-aos-duration="400">
                 <h6 class="footer-item__title">Information</h6>
                 <ul class="footer-menu">
+
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Become a Vendor</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Affiliate Program</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Affiliate Program</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Privacy Policy</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Privacy Policy</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Our Suppliers</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Extended Plan</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Our Suppliers</a>
                     </li>
                     <li class="">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Community</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Community</a>
                     </li>
                 </ul>
             </div>
@@ -58,22 +53,16 @@
                 <h6 class="footer-item__title">Customer Support</h6>
                 <ul class="footer-menu">
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Help Center</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Help Center</a>
                     </li>
                     <li class="mb-16">
-                        <a href="contact.html" class="text-gray-600 hover-text-main-600">Contact Us</a>
+                        <a href="/contact" class="text-gray-600 hover-text-main-600">Contact Us</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Report Abuse</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Submit and Dispute</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Policies & Rules</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Policies & Rules</a>
                     </li>
                     <li class="">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Online Shopping</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Online Shopping</a>
                     </li>
                 </ul>
             </div>
@@ -81,22 +70,16 @@
                 <h6 class="footer-item__title">My Account</h6>
                 <ul class="footer-menu">
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">My Account</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">My Account</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Order History</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Order History</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Shoping Cart</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Compare</a>
-                    </li>
-                    <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Help Ticket</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Shoping Cart</a>
                     </li>
                     <li class="">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Wishlist</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Wishlist</a>
                     </li>
                 </ul>
             </div>
@@ -104,22 +87,22 @@
                 <h6 class="footer-item__title">Daily Groceries</h6>
                 <ul class="footer-menu">
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Dairy & Eggs</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Dairy & Eggs</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Meat & Seafood</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Meat & Seafood</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Breakfast Food</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Breakfast Food</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Household Supplies</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Household Supplies</a>
                     </li>
                     <li class="mb-16">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Bread & Bakery</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Bread & Bakery</a>
                     </li>
                     <li class="">
-                        <a href="shop.html" class="text-gray-600 hover-text-main-600">Pantry Staples</a>
+                        <a href="/shop" class="text-gray-600 hover-text-main-600">Pantry Staples</a>
                     </li>
                 </ul>
             </div>

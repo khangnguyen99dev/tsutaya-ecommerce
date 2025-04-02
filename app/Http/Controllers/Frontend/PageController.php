@@ -60,4 +60,10 @@ class PageController extends Controller
             'title' => 'Account Page'
         ]);
     }
+    
+    public function wishlistPage(){
+        return view('livewire.clients.wishlist-page', [
+            'title' => 'Account Page'
+        ]);
+    }
 }

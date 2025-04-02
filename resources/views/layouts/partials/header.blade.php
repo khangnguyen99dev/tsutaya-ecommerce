@@ -42,42 +42,20 @@
         <div class="mobile-menu__menu">
             <!-- Nav Menu Start -->
             <ul class="nav-menu flex items-center nav-menu--mobile">
-                <li class="on-hover-item nav-menu__item has-submenu activePage">
-                    <a href="javascript:void(0)" class="nav-menu__link">Home</a>
-                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                        <li class="common-dropdown__item nav-submenu__item activePage">
-                            <a href="index.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
-                                Home
-                                Grocery</a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="index-two.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Home
-                                Electronics</a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="index-three.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Home
-                                Fashion</a>
-                        </li>
-                    </ul>
+                <li class="on-hover-item nav-menu__item activePage">
+                    <a href="/" class="nav-menu__link">Home</a>
                 </li>
                 <li class="on-hover-item nav-menu__item has-submenu">
                     <a href="javascript:void(0)" class="nav-menu__link">Shop</a>
                     <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="shop.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
+                            <a href="/shop" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
                                 Shop</a>
                         </li>
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="product-details.html"
+                            <a href="/product-detail"
                                 class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Shop
                                 Details</a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="product-details-two.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Shop Details
-                                Two</a>
                         </li>
                     </ul>
                 </li>
@@ -86,69 +64,40 @@
                     <a href="javascript:void(0)" class="nav-menu__link">Pages</a>
                     <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="cart.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
+                            <a href="/cart" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
                                 Cart</a>
                         </li>
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="wishlist.html"
+                            <a href="/wishlist"
                                 class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Wishlist</a>
                         </li>
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="checkout.html"
+                            <a href="/checkout"
                                 class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Checkout </a>
                         </li>
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="become-seller.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Become
-                                Seller</a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="account.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
+                            <a href="/account" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
                                 Account</a>
                         </li>
                     </ul>
                 </li>
-                <li class="on-hover-item nav-menu__item has-submenu">
-                    <span class="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">New</span>
-                    <a href="javascript:void(0)" class="nav-menu__link">Vendors</a>
-                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="vendor.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
-                                Vendors </a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="vendor-details.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Vendor Details
-                            </a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="vendor-two.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Vendors
-                                Two</a>
-                        </li>
-                        <li class="common-dropdown__item nav-submenu__item">
-                            <a href="vendor-two-details.html"
-                                class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Vendors Two
-                                Details</a>
-                        </li>
-                    </ul>
-                </li>
+                
                 <li class="on-hover-item nav-menu__item has-submenu">
                     <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
                     <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="blog.html" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
+                            <a href="/blog" class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
                                 Blog</a>
                         </li>
                         <li class="common-dropdown__item nav-submenu__item">
-                            <a href="blog-details.html"
+                            <a href="/blog-detail"
                                 class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Blog
                                 Details</a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="contact.html" class="nav-menu__link">Contact Us</a>
+                    <a href="/contact" class="nav-menu__link">Contact Us</a>
                 </li>
             </ul>
             <!-- Nav Menu End -->
@@ -161,8 +110,6 @@
     <div class="container container-lg">
         <div class="flex-between flex-wrap gap-8">
             <ul class="flex items-center flex-wrap hidden lg:flex">
-                <li class="border-right-item"><a href="#shipping"
-                        class="text-white text-sm hover-text-decoration-underline">Become A Seller</a></li>
                 <li class="border-right-item"><a href="#shipping"
                         class="text-white text-sm hover-text-decoration-underline">About us</a></li>
                 <li class="border-right-item"><a href="#shipping"
@@ -179,13 +126,6 @@
                                 class="nav-submenu__link hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
                                 <span class="text-sm flex"><i class="ph ph-headset"></i></span>
                                 Call Center
-                            </a>
-                        </li>
-                        <li class="nav-submenu__item">
-                            <a href="index.html"
-                                class="nav-submenu__link hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <span class="text-sm flex"><i class="ph ph-chat-circle-dots"></i></span>
-                                Live Chat
                             </a>
                         </li>
                     </ul>
@@ -298,12 +238,33 @@
                         </li>
                     </ul>
                 </li>
-                <li class="border-right-item">
-                    <a href="account.html" class="text-white text-sm py-8 flex items-center gap-6">
+                <li class="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
+                    <a href="javascript:void(0)" class="text-white text-sm py-8 flex items-center gap-6">
                         <span class="icon text-md flex"> <i class="ph ph-user-circle"></i> </span>
                         <span class="hover-text-decoration-underline">My Account</span>
                     </a>
+                    <ul
+                        class="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
+                                <img src="./images/thumbs/flag1.png" alt="Image"
+                                    class="w-16 h-12 rounded-4 border border-gray-100">
+                                Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"
+                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
+                                <img src="./images/thumbs/flag2.png" alt="Image"
+                                    class="w-16 h-12 rounded-4 border border-gray-100">
+                                Checkout
+                            </a>
+                        </li>
+                        
+                    </ul>
                 </li>
+               
             </ul>
         </div>
     </div>
@@ -379,7 +340,7 @@
                             <i class="ph ph-magnifying-glass"></i>
                         </span>
                     </button>
-                    <a href="cart.html" class="flex items-center gap-4 item-hover">
+                    <a href="/wishlist" class="flex items-center gap-4 item-hover">
                         <span class="text-2xl text-gray-700 flex relative me-6 mt-6 item-hover__text">
                             <i class="ph ph-heart"></i>
                             <span
@@ -387,7 +348,7 @@
                         </span>
                         <span class="text-md text-gray-500 item-hover__text hidden xl:flex">Wishlist</span>
                     </a>
-                    <a href="cart.html" class="flex items-center gap-4 item-hover">
+                    <a href="/cart" class="flex items-center gap-4 item-hover">
                         <span class="text-2xl text-gray-700 flex relative me-6 mt-6 item-hover__text">
                             <i class="ph ph-shopping-cart-simple"></i>
                             <span
@@ -551,7 +512,7 @@
                 <!-- Menu: Home, Shop, Cart, Wishlist, Checkout, Account, Blog, Contact -->
                 <div class="header-menu xl:block hidden">
                     <ul class="nav-menu flex items-center">
-                        <li class="on-hover-item nav-menu__item has-submenu activePage">
+                        <li class="on-hover-item nav-menu__item  activePage">
                             <a href="/" class="nav-menu__link">Home</a>
                         </li>
                         <li class="on-hover-item nav-menu__item has-submenu">

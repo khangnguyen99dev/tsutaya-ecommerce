@@ -6,8 +6,9 @@
     <title>Admin Panel - @yield('title')</title>
     
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/css/main.scss', 'resources/js/app.js'])
     @livewireStyles
+    @stack('styles')
 </head>
 <body>
     <div class="min-h-screen bg-gray-100">
@@ -30,5 +31,6 @@
     </div>
 
     @livewireScripts
+    @stack('scripts')
 </body>
 </html> 
