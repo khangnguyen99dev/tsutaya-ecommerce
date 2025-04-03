@@ -59,7 +59,7 @@ class Edit extends Component
         $this->existingImage = $book->image;
         
         // Load categories
-        $this->selectedCategories = $book->categories->pluck('id')->toArray();
+        // $this->selectedCategories = $book->categories->pluck('id')->toArray();
     }
     
     public function render()
@@ -93,13 +93,12 @@ class Edit extends Component
         // Handle image upload
         if ($this->newImage) {
             // Delete old image if exists
-            if ($this->existingImage && Storage::disk('public')->exists($this->existingImage)) {
-                Storage::disk('public')->delete($this->existingImage);
+            if ($this->existingImage) {
+                $book->image()->delete();
             }
-            
-            // Store new image
-            $imagePath = $this->newImage->store('books', 'public');
-            $book->image = $imagePath;
+            $book->image()->create([
+                'url' => $this->newImage->store('books', 'public'),
+            ]);
         }
         
         // Update book data

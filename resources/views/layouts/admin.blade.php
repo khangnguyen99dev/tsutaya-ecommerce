@@ -49,6 +49,18 @@
                                 <span>Books</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('admin.categories.index') }}" class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                                <i class="ph ph-tag mr-3 text-lg"></i>
+                                <span>Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                                <i class="ph ph-user-list mr-3 text-lg"></i>
+                                <span>Authors</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
