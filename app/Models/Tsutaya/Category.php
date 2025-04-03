@@ -9,7 +9,15 @@ use Astrotomic\Translatable\Translatable;
 
 class Category extends Model implements TranslatableContract
 {
-    use Translatable, SoftDeletes;
+    use SoftDeletes, Translatable;
+
+    protected $table = "categories";
+
+    public $timestamps = true;
 
     public $translatedAttributes = ['title'];
+
+    protected $fillable = [
+
+    ];
 }

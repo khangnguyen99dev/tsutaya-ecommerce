@@ -121,9 +121,9 @@ class Book extends Model implements TranslatableContract
         "date_published"
     ];
 
-    protected $appends = [
-        "signed_image_url",
-    ];
+    // protected $appends = [
+    //     "signed_image_url",
+    // ];
 
     // public function getSignedImageUrlAttribute(): string
     // {
