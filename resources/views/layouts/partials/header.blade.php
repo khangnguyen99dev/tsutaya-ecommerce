@@ -1,5 +1,5 @@
 <div class="preloader fixed inset-0 z-[9999] flex justify-center items-center bg-white">
-    <img src="./images/icon/preloader.gif" alt="Image">
+    <img src="/images/icon/preloader.gif" alt="Image">
 </div>
 
 <div class="overlay"></div>
@@ -37,7 +37,7 @@
     <button type="button" class="close-button"> <i class="ph ph-x"></i> </button>
     <div class="mobile-menu__inner">
         <a href="index.html" class="mobile-menu__logo">
-            <img src="./images/logo/logo.png" alt="Logo">
+            <img src="/images/logo/logo.png" alt="Logo">
         </a>
         <div class="mobile-menu__menu">
             <!-- Nav Menu Start -->
@@ -137,7 +137,7 @@
                         <li>
                             <a href="/greeting/en"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag1.png" alt="Image"
+                                <img src="/images/thumbs/flag1.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 English
                             </a>
@@ -145,7 +145,7 @@
                         <li>
                             <a href="/greeting/my"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag2.png" alt="Image"
+                                <img src="/images/thumbs/flag2.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 Malaysia
                             </a>
@@ -159,7 +159,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag1.png" alt="Image"
+                                <img src="/images/thumbs/flag1.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 USD
                             </a>
@@ -167,7 +167,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag2.png" alt="Image"
+                                <img src="/images/thumbs/flag2.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 Yen
                             </a>
@@ -175,7 +175,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag3.png" alt="Image"
+                                <img src="/images/thumbs/flag3.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 Franc
                             </a>
@@ -183,7 +183,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag4.png" alt="Image"
+                                <img src="/images/thumbs/flag4.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 EURO
                             </a>
@@ -191,7 +191,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag6.png" alt="Image"
+                                <img src="/images/thumbs/flag6.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 BDT
                             </a>
@@ -199,7 +199,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag5.png" alt="Image"
+                                <img src="/images/thumbs/flag5.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 WON
                             </a>
@@ -216,7 +216,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag1.png" alt="Image"
+                                <img src="/images/thumbs/flag1.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 Account
                             </a>
@@ -224,7 +224,7 @@
                         <li>
                             <a href="javascript:void(0)"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag2.png" alt="Image"
+                                <img src="/images/thumbs/flag2.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
                                 Checkout
                             </a>
@@ -245,7 +245,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" class="link">
-                    <img src="./images/logo/logo.png" alt="Logo">
+                    <img src="/images/logo/logo.png" alt="Logo">
                 </a>
             </div>
 
@@ -483,21 +483,11 @@
                         <li class="on-hover-item nav-menu__item  activePage">
                             <a href="/" class="nav-menu__link">Home</a>
                         </li>
-                        <li class="on-hover-item nav-menu__item has-submenu">
-                            <a href="javascript:void(0)" class="nav-menu__link">Shop</a>
-                            <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                                <li class="common-dropdown__item nav-submenu__item">
-                                    <a href="/shop"
-                                        class="common-dropdown__link nav-submenu__link hover-bg-neutral-100">
-                                        Shop</a>
-                                </li>
-                                <li class="common-dropdown__item nav-submenu__item">
-                                    <a href="/product-detail"
-                                        class="common-dropdown__link nav-submenu__link hover-bg-neutral-100"> Shop
-                                        Details</a>
-                                </li>
-                            </ul>
+                        
+                        <li class="on-hover-item nav-menu__item">
+                            <a href="/shop" class="nav-menu__link">Shop</a>
                         </li>
+
                         <li class="on-hover-item nav-menu__item has-submenu">
                             <span
                                 class="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">New</span>

@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- ========================= Breadcrumb End =============================== -->
     <!-- ============================ Contact Section Start ================================== -->
     <section class="contact py-80">
@@ -152,4 +151,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>

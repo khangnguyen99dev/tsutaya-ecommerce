@@ -1,10 +1,10 @@
 <footer class="footer py-120">
-    <img src="./images/bg/body-bottom-bg.png" alt="BG" class="body-bottom-bg">
+    <img src="/images/bg/body-bottom-bg.png" alt="BG" class="body-bottom-bg">
     <div class="container container-lg">
         <div class="footer-item-wrapper flex items-start flex-wrap">
             <div class="footer-item" data-aos="fade-up" data-aos-duration="200">
                 <div class="footer-item__logo">
-                    <a href="/"> <img src="./images/logo/logo.png" alt="Image"></a>
+                    <a href="/"> <img src="/images/logo/logo.png" alt="Image"></a>
                 </div>
                 <p class="mb-24">We're Grocery Shop, an innovative team of food supliers.</p>
                 <div class="flex items-center gap-16 mb-16">
@@ -111,10 +111,10 @@
                 <p class="mb-16">Marketpro App is available. Get it now</p>
                 <div class="flex items-center gap-8 my-32">
                     <a href="https://www.apple.com/store" class="">
-                        <img src="./images/thumbs/store-img1.png" alt="Image">
+                        <img src="/images/thumbs/store-img1.png" alt="Image">
                     </a>
                     <a href="https://play.google.com/store/apps?hl=en" class="">
-                        <img src="./images/thumbs/store-img2.png" alt="Image">
+                        <img src="/images/thumbs/store-img2.png" alt="Image">
                     </a>
                 </div>
                 <ul class="flex items-center gap-16">
@@ -155,7 +155,7 @@
             </p>
             <div class="flex items-center gap-8 flex-wrap wow fadeInRightBig">
                 <span class="text-heading text-sm">We Are Accepting</span>
-                <img src="./images/thumbs/payment-method.png" alt="Image">
+                <img src="/images/thumbs/payment-method.png" alt="Image">
             </div>
         </div>
     </div>

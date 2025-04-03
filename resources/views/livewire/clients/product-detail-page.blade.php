@@ -1,7 +1,4 @@
-@extends('layouts.app')
-@section('content')
-    <!-- ========================= Breadcrumb End =============================== -->
-    <!-- ========================== Product Details Two Start =========================== -->
+<div>
     <section class="product-details py-80">
         <div class="container container-lg">
             <div class="row g-4">
@@ -12,27 +9,27 @@
                                 <div class="product-details__thumb-slider border border-gray-100 rounded-16">
                                     <div class="">
                                         <div class="product-details__thumb flex items-center justify-center h-full">
-                                            <img src="./images/thumbs/product-details-two-thumb1.png" alt="Image">
+                                            <img src="/images/thumbs/product-details-two-thumb1.png" alt="Image">
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="product-details__thumb flex items-center justify-center h-full">
-                                            <img src="./images/thumbs/product-details-two-thumb2.png" alt="Image">
+                                            <img src="/images/thumbs/product-details-two-thumb2.png" alt="Image">
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="product-details__thumb flex items-center justify-center h-full">
-                                            <img src="./images/thumbs/product-details-two-thumb3.png" alt="Image">
+                                            <img src="/images/thumbs/product-details-two-thumb3.png" alt="Image">
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="product-details__thumb flex items-center justify-center h-full">
-                                            <img src="./images/thumbs/product-details-two-thumb1.png" alt="Image">
+                                            <img src="/images/thumbs/product-details-two-thumb1.png" alt="Image">
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="product-details__thumb flex items-center justify-center h-full">
-                                            <img src="./images/thumbs/product-details-two-thumb2.png" alt="Image">
+                                            <img src="/images/thumbs/product-details-two-thumb2.png" alt="Image">
                                         </div>
                                     </div>
                                 </div>
@@ -41,31 +38,31 @@
                                         <div>
                                             <div
                                                 class="max-w-120 max-h-120 h-full flex items-center justify-center border border-gray-100 rounded-16 p-8">
-                                                <img src="./images/thumbs/product-details-two-thumb1.png" alt="Image">
+                                                <img src="/images/thumbs/product-details-two-thumb1.png" alt="Image">
                                             </div>
                                         </div>
                                         <div>
                                             <div
                                                 class="max-w-120 max-h-120 h-full flex items-center justify-center border border-gray-100 rounded-16 p-8">
-                                                <img src="./images/thumbs/product-details-two-thumb2.png" alt="Image">
+                                                <img src="/images/thumbs/product-details-two-thumb2.png" alt="Image">
                                             </div>
                                         </div>
                                         <div>
                                             <div
                                                 class="max-w-120 max-h-120 h-full flex items-center justify-center border border-gray-100 rounded-16 p-8">
-                                                <img src="./images/thumbs/product-details-two-thumb3.png" alt="Image">
+                                                <img src="/images/thumbs/product-details-two-thumb3.png" alt="Image">
                                             </div>
                                         </div>
                                         <div>
                                             <div
                                                 class="max-w-120 max-h-120 h-full flex items-center justify-center border border-gray-100 rounded-16 p-8">
-                                                <img src="./images/thumbs/product-details-two-thumb1.png" alt="Image">
+                                                <img src="/images/thumbs/product-details-two-thumb1.png" alt="Image">
                                             </div>
                                         </div>
                                         <div>
                                             <div
                                                 class="max-w-120 max-h-120 h-full flex items-center justify-center border border-gray-100 rounded-16 p-8">
-                                                <img src="./images/thumbs/product-details-two-thumb2.png" alt="Image">
+                                                <img src="/images/thumbs/product-details-two-thumb2.png" alt="Image">
                                             </div>
                                         </div>
                                     </div>
@@ -76,7 +73,7 @@
                             <div class="product-details__content">
                                 <div
                                     class="flex items-center justify-center mb-24 flex-wrap gap-16 bg-color-one rounded-8 py-16 px-24 relative z-[1]">
-                                    <img src="./images/bg/details-offer-bg.png" alt="Image"
+                                    <img src="/images/bg/details-offer-bg.png" alt="Image"
                                         class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full z-[-1]">
                                     <div class="flex items-center gap-16">
                                         <span class="text-white text-sm">Special Offer:</span>
@@ -212,7 +209,7 @@
                                 <div class="mt-32">
                                     <span class="font-[500] text-gray-900">100% Guarantee Safe Checkout</span>
                                     <div class="mt-10">
-                                        <img src="./images/thumbs/gateway-img.png" alt="Image">
+                                        <img src="/images/thumbs/gateway-img.png" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +351,7 @@
                         </ul>
                         <a href="index.html"
                             class="btn bg-color-one rounded-16 flex items-center gap-8 text-main-600 hover-bg-main-600 hover-text-white">
-                            <img src="./images/icon/satisfaction-icon.png" alt="Image">
+                            <img src="/images/icon/satisfaction-icon.png" alt="Image">
                             100% Satisfaction Guaranteed
                         </a>
                     </div>
@@ -553,7 +550,7 @@
                                     <div class="xl:w-6/12  flex-grow-0 flex-shrink-0 basis-auto">
                                         <h6 class="mb-24">Product Description</h6>
                                         <div class="flex items-start gap-24 pb-44 border-b border-gray-100 mb-44">
-                                            <img src="./images/thumbs/comment-img1.png" alt="Image"
+                                            <img src="/images/thumbs/comment-img1.png" alt="Image"
                                                 class="w-52 h-52 object-fit-cover rounded-[50%] flex-shrink-0">
                                             <div class="flex-grow">
                                                 <div class="flex-between items-start gap-8 ">
@@ -596,7 +593,7 @@
                                             </div>
                                         </div>
                                         <div class="flex items-start gap-24">
-                                            <img src="./images/thumbs/comment-img1.png" alt="Image"
+                                            <img src="/images/thumbs/comment-img1.png" alt="Image"
                                                 class="w-52 h-52 object-fit-cover rounded-[50%] flex-shrink-0">
                                             <div class="flex-grow">
                                                 <div class="flex-between items-start gap-8 ">
@@ -853,7 +850,7 @@
                     <div
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img7.png" alt="Image">
+                            <img src="/images/thumbs/product-img7.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -890,7 +887,7 @@
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <span class="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">Sale 50% </span>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img8.png" alt="Image">
+                            <img src="/images/thumbs/product-img8.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -927,7 +924,7 @@
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <span class="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">Sale 50% </span>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img9.png" alt="Image">
+                            <img src="/images/thumbs/product-img9.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -964,7 +961,7 @@
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <span class="product-card__badge bg-info-600 px-8 py-4 text-sm text-white">Best Sale </span>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img10.png" alt="Image">
+                            <img src="/images/thumbs/product-img10.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1000,7 +997,7 @@
                     <div
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img11.png" alt="Image">
+                            <img src="/images/thumbs/product-img11.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1037,7 +1034,7 @@
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <span class="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white">Sale 50% </span>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img12.png" alt="Image">
+                            <img src="/images/thumbs/product-img12.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1075,7 +1072,7 @@
                         class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <span class="product-card__badge bg-info-600 px-8 py-4 text-sm text-white">Best Sale </span>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img10.png" alt="Image">
+                            <img src="/images/thumbs/product-img10.png" alt="Image">
                         </a>
                         <div class="product-card__content p-sm-2 w-full">
                             <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1171,7 +1168,7 @@
     <div class="newsletter">
         <div class="container container-lg">
             <div class="newsletter-box relative rounded-16 flex items-center gap-16 flex-wrap z-[1]">
-                <img src="./images/bg/newsletter-bg.png" alt="Image"
+                <img src="/images/bg/newsletter-bg.png" alt="Image"
                     class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full opacity-6">
                 <div class="row items-center">
                     <div class="2xl:w-6/12  flex-grow-0 flex-shrink-0 basis-auto">
@@ -1189,10 +1186,10 @@
                         </div>
                     </div>
                     <div class="2xl:w-6/12  flex-grow-0 flex-shrink-0 basis-auto text-center xl:block hidden">
-                        <img src="./images/thumbs/newsletter-img.png" alt="Image" class="wow fadeInUp">
+                        <img src="/images/thumbs/newsletter-img.png" alt="Image" class="wow fadeInUp">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-@endsection
+</div>

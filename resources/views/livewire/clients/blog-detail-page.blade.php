@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- ========================= Breadcrumb End =============================== -->
     <!-- =============================== Blog Details Section Start =========================== -->
     <section class="blog-details py-80">
@@ -8,7 +7,7 @@
                 <div class="xl:w-8/12  flex-grow-0 flex-shrink-0 basis-auto pe-xl-4">
                     <div class="blog-item-wrapper">
                         <div class="blog-item">
-                            <img src="./images/thumbs/blog-img1.png" alt="Image" class="cover-img rounded-16">
+                            <img src="/images/thumbs/blog-img1.png" alt="Image" class="cover-img rounded-16">
                             <div class="blog-item__content mt-24">
                                 <span class="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">Gadget</span>
                                 <h4 class="mb-24">Nice decoration make be distilled to a single house</h4>
@@ -49,10 +48,10 @@
                     <div class="mt-48">
                         <div class="row g-4">
                             <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12 ">
-                                <img src="./images/thumbs/blog-details-img1.png" alt="Image" class="rounded-16">
+                                <img src="/images/thumbs/blog-details-img1.png" alt="Image" class="rounded-16">
                             </div>
                             <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12 ">
-                                <img src="./images/thumbs/blog-details-img2.png" alt="Image" class="rounded-16">
+                                <img src="/images/thumbs/blog-details-img2.png" alt="Image" class="rounded-16">
                             </div>
                         </div>
                     </div>
@@ -200,7 +199,7 @@
                         <form action="#">
                             <h6 class="mb-48">Comments</h6>
                             <div class="flex items-start gap-16 mb-32 pb-32 border-b border-gray-100">
-                                <img src="./images/thumbs/comment-img1.png" alt="Image"
+                                <img src="/images/thumbs/comment-img1.png" alt="Image"
                                     class="w-40 h-40 rounded-[50%] object-fit-cover flex-shrink-0">
                                 <div class="flex-grow">
                                     <div class="flex items-center gap-8">
@@ -214,7 +213,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-16 mb-32 pb-32 border-b border-gray-100">
-                                <img src="./images/thumbs/comment-img2.png" alt="Image"
+                                <img src="/images/thumbs/comment-img2.png" alt="Image"
                                     class="w-40 h-40 rounded-[50%] object-fit-cover flex-shrink-0">
                                 <div class="flex-grow">
                                     <div class="flex items-center gap-8">
@@ -229,7 +228,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-16 mb-32 pb-32 border-b border-gray-100">
-                                <img src="./images/thumbs/comment-img3.png" alt="Image"
+                                <img src="/images/thumbs/comment-img3.png" alt="Image"
                                     class="w-40 h-40 rounded-[50%] object-fit-cover flex-shrink-0">
                                 <div class="flex-grow">
                                     <div class="flex items-center gap-8">
@@ -242,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-16 mb-32 pb-32 border-b border-gray-100">
-                                <img src="./images/thumbs/comment-img4.png" alt="Image"
+                                <img src="/images/thumbs/comment-img4.png" alt="Image"
                                     class="w-40 h-40 rounded-[50%] object-fit-cover flex-shrink-0">
                                 <div class="flex-grow">
                                     <div class="flex items-center gap-8">
@@ -256,7 +255,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-16">
-                                <img src="./images/thumbs/comment-img5.png" alt="Image"
+                                <img src="/images/thumbs/comment-img5.png" alt="Image"
                                     class="w-40 h-40 rounded-[50%] object-fit-cover flex-shrink-0">
                                 <div class="flex-grow">
                                     <div class="flex items-center gap-8">
@@ -297,7 +296,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post1.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post1.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -316,7 +315,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post2.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post2.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -335,7 +334,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post3.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post3.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -354,7 +353,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-0">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post4.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post4.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -506,4 +505,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>

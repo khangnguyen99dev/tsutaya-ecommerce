@@ -8,6 +8,6 @@ class AccountPage extends Component
 {
     public function render()
     {
-        return view('livewire.clients.account-page');
+        return view('livewire.clients.account-page')->layout('layouts.app');
     }
 }

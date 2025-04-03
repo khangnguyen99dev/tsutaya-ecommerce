@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- ========================= Breadcrumb End =============================== -->
     <!-- =============================== Blog Section Start =========================== -->
     <section class="blog py-80">
@@ -9,7 +8,7 @@
                     <div class="blog-item-wrapper">
                         <div class="blog-item">
                             <a href="blog-detials.html" class="w-full h-full rounded-16 overflow-hidden">
-                                <img src="./images/thumbs/blog-img1.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/blog-img1.png" alt="Image" class="cover-img">
                             </a>
                             <div class="blog-item__content mt-24">
                                 <span class="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">Gadget</span>
@@ -40,7 +39,7 @@
                         </div>
                         <div class="blog-item">
                             <a href="blog-detials.html" class="w-full h-full rounded-16 overflow-hidden">
-                                <img src="./images/thumbs/blog-img2.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/blog-img2.png" alt="Image" class="cover-img">
                             </a>
                             <div class="blog-item__content mt-24">
                                 <span class="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">Gadget</span>
@@ -71,7 +70,7 @@
                         </div>
                         <div class="blog-item">
                             <a href="blog-detials.html" class="w-full h-full rounded-16 overflow-hidden">
-                                <img src="./images/thumbs/blog-img3.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/blog-img3.png" alt="Image" class="cover-img">
                             </a>
                             <div class="blog-item__content mt-24">
                                 <span class="bg-main-50 text-main-600 py-4 px-24 rounded-8 mb-16">Gadget</span>
@@ -168,7 +167,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post1.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post1.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -187,7 +186,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post2.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post2.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -206,7 +205,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-16">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post3.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post3.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -225,7 +224,7 @@
                         <div class="flex items-center md:flex-nowrap flex-wrap gap-24 mb-0">
                             <a href="blog-details.html"
                                 class="w-full h-full rounded-4 overflow-hidden w-120 h-120 flex-shrink-0">
-                                <img src="./images/thumbs/recent-post4.png" alt="Image" class="cover-img">
+                                <img src="/images/thumbs/recent-post4.png" alt="Image" class="cover-img">
                             </a>
                             <div class="flex-grow">
                                 <h6 class="text-lg">
@@ -377,4 +376,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>

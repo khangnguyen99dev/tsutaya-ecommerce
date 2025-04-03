@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Book extends Model implements TranslatableContract
 {
@@ -132,6 +133,11 @@ class Book extends Model implements TranslatableContract
     public function authors(): HasMany
     {
         return $this->hasMany(Author::class, "book_id", "id");
+    }
+
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(Category::class, "book_categories", "book_id", "category_id");
     }
 
     public function image(): MorphOne

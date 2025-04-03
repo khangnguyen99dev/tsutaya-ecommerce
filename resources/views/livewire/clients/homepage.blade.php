@@ -1,6 +1,6 @@
-@extends('layouts.app')
 
-@section('content')
+
+<div>
     <!-- ============================ Banner Section start =============================== -->
     <div class="banner">
         <div class="container container-lg">
@@ -10,7 +10,7 @@
                     class="scroll-down w-84 h-84 text-center flex items-center justify-center bg-main-600 rounded-[50%] border border-5 text-white border-white !absolute left-[50%] translate-x-[-50%] bottom-0 hover-bg-main-800">
                     <span class="icon line-height-0"><i class="ph ph-caret-double-down"></i></span>
                 </a>
-                <img src="./images/bg/banner-bg.png" alt="Image"
+                <img src="/images/bg/banner-bg.png" alt="Image"
                     class="banner-img absolute inset-block-start-0 inset-inline-start-0 w-full h-full z-[-1] object-fit-cover rounded-24">
                 <div class="flex items-center">
                     <button type="button" id="banner-prev"
@@ -38,7 +38,7 @@
                             </div>
                             <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt data-tilt-max="12"
                                 data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-scale="1.06">
-                                <img src="./images/thumbs/banner-img1.png" alt="Image">
+                                <img src="/images/thumbs/banner-img1.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt data-tilt-max="12"
                                 data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-scale="1.06">
-                                <img src="./images/thumbs/banner-img3.png" alt="Image">
+                                <img src="/images/thumbs/banner-img3.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="400">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img1.png" alt="Image">
+                                <img src="/images/thumbs/feature-img1.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -99,7 +99,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="600">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img2.png" alt="Image">
+                                <img src="/images/thumbs/feature-img2.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -110,7 +110,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="800">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img3.png" alt="Image">
+                                <img src="/images/thumbs/feature-img3.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -121,7 +121,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="1000">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img4.png" alt="Image">
+                                <img src="/images/thumbs/feature-img4.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -132,7 +132,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="1200">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img5.png" alt="Image">
+                                <img src="/images/thumbs/feature-img5.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -143,7 +143,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="1400">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img6.png" alt="Image">
+                                <img src="/images/thumbs/feature-img6.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -154,7 +154,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="1600">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img7.png" alt="Image">
+                                <img src="/images/thumbs/feature-img7.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -165,7 +165,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="1800">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img2.png" alt="Image">
+                                <img src="/images/thumbs/feature-img2.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -176,7 +176,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="2000">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img8.png" alt="Image">
+                                <img src="/images/thumbs/feature-img8.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -187,7 +187,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="2200">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img9.png" alt="Image">
+                                <img src="/images/thumbs/feature-img9.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -198,7 +198,7 @@
                     <div class="feature-item text-center wow bounceIn" data-aos="fade-up" data-aos-duration="2400">
                         <div class="feature-item__thumb rounded-[50%]">
                             <a href="shop.html" class="w-full h-full flex items-center justify-center">
-                                <img src="./images/thumbs/feature-img10.png" alt="Image">
+                                <img src="/images/thumbs/feature-img10.png" alt="Image">
                             </a>
                         </div>
                         <div class="feature-item__content mt-16">
@@ -218,7 +218,7 @@
                 <div class="2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12  wow bounceIn"
                     data-aos="fade-up" data-aos-duration="400">
                     <div class="promotional-banner-item relative rounded-24 overflow-hidden z-[1]">
-                        <img src="./images/thumbs/promotional-banner-img1.png" alt="Image"
+                        <img src="/images/thumbs/promotional-banner-img1.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1]">
                         <div class="promotional-banner-item__content">
                             <h6 class="promotional-banner-item__title text-32">Everyday Fresh Meat</h6>
@@ -232,7 +232,7 @@
                 <div class="2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12  wow bounceIn"
                     data-aos="fade-up" data-aos-duration="600">
                     <div class="promotional-banner-item relative rounded-24 overflow-hidden z-[1]">
-                        <img src="./images/thumbs/promotional-banner-img2.png" alt="Image"
+                        <img src="/images/thumbs/promotional-banner-img2.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1]">
                         <div class="promotional-banner-item__content">
                             <h6 class="promotional-banner-item__title text-32">Daily Fresh Vegetables</h6>
@@ -246,7 +246,7 @@
                 <div class="2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12  wow bounceIn"
                     data-aos="fade-up" data-aos-duration="800">
                     <div class="promotional-banner-item relative rounded-24 overflow-hidden z-[1]">
-                        <img src="./images/thumbs/promotional-banner-img3.png" alt="Image"
+                        <img src="/images/thumbs/promotional-banner-img3.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1]">
                         <div class="promotional-banner-item__content">
                             <h6 class="promotional-banner-item__title text-32">Everyday Fresh Milk</h6>
@@ -260,7 +260,7 @@
                 <div class="2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto custom-sm:w-6/12  wow bounceIn"
                     data-aos="fade-up" data-aos-duration="1000">
                     <div class="promotional-banner-item relative rounded-24 overflow-hidden z-[1]">
-                        <img src="./images/thumbs/promotional-banner-img4.png" alt="Image"
+                        <img src="/images/thumbs/promotional-banner-img4.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1]">
                         <div class="promotional-banner-item__content">
                             <h6 class="promotional-banner-item__title text-32">Everyday Fresh Fruits</h6>
@@ -302,10 +302,10 @@
                 <div class="" data-aos="fade-up" data-aos-duration="600">
                     <div
                         class="flash-sales-item rounded-16 overflow-hidden z-[1] relative flex items-center flex-0 justify-between gap-8">
-                        <img src="./images/bg/flash-sale-bg1.png" alt="Image"
+                        <img src="/images/bg/flash-sale-bg1.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1] flash-sales-item__bg">
                         <div class="flash-sales-item__thumb md:block hidden">
-                            <img src="./images/thumbs/flash-sale-img1.png" alt="Image">
+                            <img src="/images/thumbs/flash-sale-img1.png" alt="Image">
                         </div>
                         <div class="flash-sales-item__content ms-sm-auto">
                             <h6 class="text-32 mb-20">Fresh Vegetables</h6>
@@ -339,10 +339,10 @@
                 <div class="" data-aos="fade-up" data-aos-duration="1000">
                     <div
                         class="flash-sales-item rounded-16 overflow-hidden z-[1] relative flex items-center flex-0 justify-between gap-8">
-                        <img src="./images/bg/flash-sale-bg2.png" alt="Image"
+                        <img src="/images/bg/flash-sale-bg2.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1] flash-sales-item__bg">
                         <div class="flash-sales-item__thumb md:block hidden">
-                            <img src="./images/thumbs/flash-sale-img2.png" alt="Image">
+                            <img src="/images/thumbs/flash-sale-img2.png" alt="Image">
                         </div>
                         <div class="flash-sales-item__content ms-sm-auto">
                             <h6 class="text-32 mb-20">Daily Snacks</h6>
@@ -376,10 +376,10 @@
                 <div class="" data-aos="fade-up" data-aos-duration="1400">
                     <div
                         class="flash-sales-item rounded-16 overflow-hidden z-[1] relative flex items-center flex-0 justify-between gap-8">
-                        <img src="./images/bg/flash-sale-bg2.png" alt="Image"
+                        <img src="/images/bg/flash-sale-bg2.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 w-full h-full object-fit-cover z-[-1] flash-sales-item__bg">
                         <div class="flash-sales-item__thumb md:block hidden">
-                            <img src="./images/thumbs/flash-sale-img2.png" alt="Image">
+                            <img src="/images/thumbs/flash-sale-img2.png" alt="Image">
                         </div>
                         <div class="flash-sales-item__content ms-sm-auto">
                             <h6 class="text-32 mb-20">Daily Snacks</h6>
@@ -426,7 +426,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img1.png" alt="Image">
+                            <img src="/images/thumbs/product-img1.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -468,7 +468,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img2.png" alt="Image">
+                            <img src="/images/thumbs/product-img2.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -510,7 +510,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img3.png" alt="Image">
+                            <img src="/images/thumbs/product-img3.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -552,7 +552,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img1.png" alt="Image">
+                            <img src="/images/thumbs/product-img1.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -594,7 +594,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img5.png" alt="Image">
+                            <img src="/images/thumbs/product-img5.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -636,7 +636,7 @@
                             Add <i class="ph ph-shopping-cart"></i>
                         </a>
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img6.png" alt="Image">
+                            <img src="/images/thumbs/product-img6.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="product-card__price mb-16">
@@ -679,15 +679,15 @@
                 <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in" data-aos-duration="600">
                     <div
                         class="offer-card relative rounded-16 bg-main-600 overflow-hidden p-16 flex items-center gap-16 flex-wrap z-[1]">
-                        <img src="./images/shape/offer-shape.png" alt="Image"
+                        <img src="/images/shape/offer-shape.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full opacity-6">
                         <div class="offer-card__thumb xl:block hidden">
-                            <img src="./images/thumbs/offer-img1.png" alt="Image">
+                            <img src="/images/thumbs/offer-img1.png" alt="Image">
                         </div>
                         <div class="2xl:py-[1.5rem]">
                             <div
                                 class="offer-card__logo mb-16 w-80 h-80 flex items-center justify-center bg-white rounded-[50%]">
-                                <img src="./images/thumbs/offer-logo.png" alt="Image">
+                                <img src="/images/thumbs/offer-logo.png" alt="Image">
                             </div>
                             <h4 class="text-white mb-8">$5 off your first order</h4>
                             <div class="flex items-center gap-8">
@@ -706,15 +706,15 @@
                 <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in" data-aos-duration="800">
                     <div
                         class="offer-card relative rounded-16 bg-main-600 overflow-hidden p-16 flex items-center gap-16 flex-wrap z-[1]">
-                        <img src="./images/shape/offer-shape.png" alt="Image"
+                        <img src="/images/shape/offer-shape.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full opacity-6">
                         <div class="offer-card__thumb xl:block hidden">
-                            <img src="./images/thumbs/offer-img2.png" alt="Image">
+                            <img src="/images/thumbs/offer-img2.png" alt="Image">
                         </div>
                         <div class="2xl:py-[1.5rem]">
                             <div
                                 class="offer-card__logo mb-16 w-80 h-80 flex items-center justify-center bg-white rounded-[50%]">
-                                <img src="./images/thumbs/offer-logo.png" alt="Image">
+                                <img src="/images/thumbs/offer-logo.png" alt="Image">
                             </div>
                             <h4 class="text-white mb-8">$5 off your first order</h4>
                             <div class="flex items-center gap-8">
@@ -787,7 +787,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -828,7 +828,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -869,7 +869,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -910,7 +910,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -949,7 +949,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -990,7 +990,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1029,7 +1029,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1070,7 +1070,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1110,7 +1110,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1151,7 +1151,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1192,7 +1192,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1232,7 +1232,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1276,7 +1276,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1317,7 +1317,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1358,7 +1358,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1399,7 +1399,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1438,7 +1438,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1479,7 +1479,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1518,7 +1518,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1559,7 +1559,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1599,7 +1599,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1640,7 +1640,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1681,7 +1681,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1721,7 +1721,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1765,7 +1765,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1806,7 +1806,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1847,7 +1847,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1888,7 +1888,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1927,7 +1927,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -1968,7 +1968,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2007,7 +2007,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2048,7 +2048,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2088,7 +2088,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2129,7 +2129,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2170,7 +2170,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2210,7 +2210,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2254,7 +2254,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2295,7 +2295,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2336,7 +2336,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2377,7 +2377,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2416,7 +2416,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2457,7 +2457,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2496,7 +2496,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2537,7 +2537,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2577,7 +2577,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2618,7 +2618,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2659,7 +2659,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2699,7 +2699,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2743,7 +2743,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2784,7 +2784,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2825,7 +2825,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2866,7 +2866,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2905,7 +2905,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2946,7 +2946,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -2985,7 +2985,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3026,7 +3026,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3066,7 +3066,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3107,7 +3107,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3148,7 +3148,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3188,7 +3188,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3232,7 +3232,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3273,7 +3273,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3314,7 +3314,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3355,7 +3355,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3394,7 +3394,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3435,7 +3435,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3474,7 +3474,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3515,7 +3515,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3555,7 +3555,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3596,7 +3596,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3637,7 +3637,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3677,7 +3677,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3721,7 +3721,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img7.png" alt="Image">
+                                    <img src="/images/thumbs/product-img7.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3762,7 +3762,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3803,7 +3803,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3844,7 +3844,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3883,7 +3883,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img11.png" alt="Image">
+                                    <img src="/images/thumbs/product-img11.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3924,7 +3924,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img12.png" alt="Image">
+                                    <img src="/images/thumbs/product-img12.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -3963,7 +3963,7 @@
                                 class="product-card h-full p-8 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img13.png" alt="Image">
+                                    <img src="/images/thumbs/product-img13.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4004,7 +4004,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img14.png" alt="Image">
+                                    <img src="/images/thumbs/product-img14.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4044,7 +4044,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img15.png" alt="Image">
+                                    <img src="/images/thumbs/product-img15.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4085,7 +4085,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img16.png" alt="Image">
+                                    <img src="/images/thumbs/product-img16.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4126,7 +4126,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img17.png" alt="Image">
+                                    <img src="/images/thumbs/product-img17.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4166,7 +4166,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4231,10 +4231,10 @@
             <div class="row g-12">
                 <div class="lg:w-4/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in">
                     <div class="hot-deals relative rounded-16 bg-main-600 overflow-hidden p-28 z-[1] text-center">
-                        <img src="./images/shape/offer-shape.png" alt="Image"
+                        <img src="/images/shape/offer-shape.png" alt="Image"
                             class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full opacity-6">
                         <div class="hot-deals__thumb">
-                            <img src="./images/thumbs/hot-deals-img.png" alt="Image">
+                            <img src="/images/thumbs/hot-deals-img.png" alt="Image">
                         </div>
                         <div class="2xl:py-[1.5rem]">
                             <h4 class="text-white mb-8">Fresh Vegetables</h4>
@@ -4276,7 +4276,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img8.png" alt="Image">
+                                    <img src="/images/thumbs/product-img8.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4316,7 +4316,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4356,7 +4356,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img10.png" alt="Image">
+                                    <img src="/images/thumbs/product-img10.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4395,7 +4395,7 @@
                                 <span class="product-card__badge bg-warning-600 px-8 py-4 text-sm text-white">New</span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img18.png" alt="Image">
+                                    <img src="/images/thumbs/product-img18.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4435,7 +4435,7 @@
                                 </span>
                                 <a href="product-details.html"
                                     class="product-card__thumb flex items-center justify-center">
-                                    <img src="./images/thumbs/product-img9.png" alt="Image">
+                                    <img src="/images/thumbs/product-img9.png" alt="Image">
                                 </a>
                                 <div class="product-card__content p-sm-2 w-full">
                                     <h6 class="title text-lg font-[600] mt-12 mb-8">
@@ -4491,7 +4491,7 @@
                     <div class="vendor-card text-center px-16 pb-24"
                         style="-webkit-mask-image: url(/images/shape/box-shape2.png);mask-image: url(/images/shape/box-shape2.png);">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo1.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo1.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Organic Market</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4499,19 +4499,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4520,7 +4520,7 @@
                     data-aos="zoom-in" data-aos-duration="400">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo2.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo2.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Safeway</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4528,19 +4528,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4549,7 +4549,7 @@
                     data-aos="zoom-in" data-aos-duration="600">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo3.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo3.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Food Max</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4557,19 +4557,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4578,7 +4578,7 @@
                     data-aos="zoom-in" data-aos-duration="800">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo4.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo4.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">HRmart</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4586,19 +4586,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4607,7 +4607,7 @@
                     data-aos="zoom-in" data-aos-duration="200">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo5.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo5.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Lucky Supermarket</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4615,19 +4615,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4636,7 +4636,7 @@
                     data-aos="zoom-in" data-aos-duration="400">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo6.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo6.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Arico Farmer</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4644,19 +4644,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4665,7 +4665,7 @@
                     data-aos="zoom-in" data-aos-duration="600">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo7.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo7.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Farmer Market</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4673,19 +4673,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4694,7 +4694,7 @@
                     data-aos="zoom-in" data-aos-duration="800">
                     <div class="vendor-card text-center px-16 pb-24">
                         <div class="">
-                            <img src="./images/thumbs/vendor-logo8.png" alt="Image" class="vendor-card__logo m-12">
+                            <img src="/images/thumbs/vendor-logo8.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Foodsco</h6>
                             <span class="text-heading text-sm block">Delivery by 6:15am</span>
                             <a href="shop.html" class="btn btn-main-two rounded-[50rem] py-6 px-16 text-12 mt-8">$5 off
@@ -4702,19 +4702,19 @@
                         </div>
                         <div class="vendor-card__list mt-22 flex items-center justify-center flex-wrap gap-8">
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img1.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img1.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img2.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img2.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img3.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img3.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img4.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img4.png" alt="Image">
                             </div>
                             <div class="vendor-card__item bg-white rounded-[50%] flex items-center justify-center">
-                                <img src="./images/thumbs/vendor-img5.png" alt="Image">
+                                <img src="/images/thumbs/vendor-img5.png" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -4743,7 +4743,7 @@
                                         50% </span>
                                     <a href="product-details.html"
                                         class="product-card__thumb flex items-center justify-center">
-                                        <img src="./images/thumbs/best-sell1.png" alt="Image">
+                                        <img src="/images/thumbs/best-sell1.png" alt="Image">
                                     </a>
                                     <div class="countdown" id="countdown6">
                                         <ul class="countdown-list style-three flex items-center flex-wrap">
@@ -4813,7 +4813,7 @@
                                         50% </span>
                                     <a href="product-details.html"
                                         class="product-card__thumb flex items-center justify-center">
-                                        <img src="./images/thumbs/best-sell2.png" alt="Image">
+                                        <img src="/images/thumbs/best-sell2.png" alt="Image">
                                     </a>
                                     <div class="countdown" id="countdown7">
                                         <ul class="countdown-list style-three flex items-center flex-wrap">
@@ -4883,7 +4883,7 @@
                                         50% </span>
                                     <a href="product-details.html"
                                         class="product-card__thumb flex items-center justify-center">
-                                        <img src="./images/thumbs/best-sell3.png" alt="Image">
+                                        <img src="/images/thumbs/best-sell3.png" alt="Image">
                                     </a>
                                     <div class="countdown" id="countdown8">
                                         <ul class="countdown-list style-three flex items-center flex-wrap">
@@ -4953,7 +4953,7 @@
                                         50% </span>
                                     <a href="product-details.html"
                                         class="product-card__thumb flex items-center justify-center">
-                                        <img src="./images/thumbs/best-sell4.png" alt="Image">
+                                        <img src="/images/thumbs/best-sell4.png" alt="Image">
                                     </a>
                                     <div class="countdown" id="countdown9">
                                         <ul class="countdown-list style-three flex items-center flex-wrap">
@@ -5020,10 +5020,10 @@
                     data-aos-duration="600">
                     <div class="relative rounded-16 bg-light-purple overflow-hidden p-28 z-[1] text-center">
                         <div class="">
-                            <img src="./images/bg/special-snacks.png" alt="Image"
+                            <img src="/images/bg/special-snacks.png" alt="Image"
                                 class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full cover-img">
                             <div class="custom-2xl:block hidden">
-                                <img src="./images/thumbs/special-snacks-img.png" alt="Image">
+                                <img src="/images/thumbs/special-snacks-img.png" alt="Image">
                             </div>
                         </div>
                         <div class="2xl:py-[1.5rem]">
@@ -5065,12 +5065,12 @@
     <div class="delivery-section">
         <div class="container container-lg">
             <div class="delivery relative rounded-16 bg-main-600 p-16 flex items-center gap-16 flex-wrap z-[1]">
-                <img src="./images/bg/delivery-bg.png" alt="Image"
+                <img src="/images/bg/delivery-bg.png" alt="Image"
                     class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full">
                 <div class="row items-center">
                     <div class="lg:w-3/12  flex-grow-0 flex-shrink-0 basis-auto lg:block hidden">
                         <div class="delivery__man text-center" data-aos="fade-down-right">
-                            <img src="./images/thumbs/delivery-man.png" alt="Image">
+                            <img src="/images/thumbs/delivery-man.png" alt="Image">
                         </div>
                     </div>
                     <div
@@ -5090,7 +5090,7 @@
                     </div>
                     <div class="lg:w-4/12  flex-grow-0 flex-shrink-0 basis-auto md:w-5/12  flex-grow-0 flex-shrink-0 basis-auto md:block hidden"
                         data-aos="zoom-out" data-aos-duration="800">
-                        <img src="./images/thumbs/special-snacks-img.png" alt="Image">
+                        <img src="/images/thumbs/special-snacks-img.png" alt="Image">
                     </div>
                 </div>
             </div>
@@ -5125,7 +5125,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img20.png" alt="Image">
+                            <img src="/images/thumbs/product-img20.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5161,7 +5161,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img21.png" alt="Image">
+                            <img src="/images/thumbs/product-img21.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5197,7 +5197,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img22.png" alt="Image">
+                            <img src="/images/thumbs/product-img22.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5233,7 +5233,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img23.png" alt="Image">
+                            <img src="/images/thumbs/product-img23.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5269,7 +5269,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img24.png" alt="Image">
+                            <img src="/images/thumbs/product-img24.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5305,7 +5305,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img25.png" alt="Image">
+                            <img src="/images/thumbs/product-img25.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5341,7 +5341,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img21.png" alt="Image">
+                            <img src="/images/thumbs/product-img21.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -5392,7 +5392,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img1.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img1.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5414,7 +5414,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img2.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img2.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5436,7 +5436,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img3.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img3.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5458,7 +5458,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5482,7 +5482,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img1.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img1.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5504,7 +5504,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img2.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img2.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5526,7 +5526,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img3.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img3.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5548,7 +5548,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5582,7 +5582,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img5.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img5.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5604,7 +5604,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img6.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img6.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5626,7 +5626,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5648,7 +5648,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img8.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img8.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5672,7 +5672,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img5.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img5.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5694,7 +5694,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img6.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img6.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5716,7 +5716,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5738,7 +5738,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img8.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img8.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5772,7 +5772,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img9.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img9.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5794,7 +5794,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5816,7 +5816,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5838,7 +5838,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5862,7 +5862,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img9.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img9.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5884,7 +5884,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5906,7 +5906,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5928,7 +5928,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img4.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img4.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5962,7 +5962,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img3.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img3.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -5984,7 +5984,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6006,7 +6006,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img1.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img1.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6028,7 +6028,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img8.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img8.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6052,7 +6052,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img1.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img1.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6074,7 +6074,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img7.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img7.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6096,7 +6096,7 @@
                                 <div class="flex items-center gap-16 mb-40">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img3.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img3.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6118,7 +6118,7 @@
                                 <div class="flex items-center gap-16">
                                     <div class="w-90 h-90 rounded-12 border border-gray-100 flex-shrink-0">
                                         <a href="product-details.html" class="link"><img
-                                                src="./images/thumbs/short-product-img8.png" alt="Image"></a>
+                                                src="/images/thumbs/short-product-img8.png" alt="Image"></a>
                                     </div>
                                     <div class="product-card__content mt-12">
                                         <div class="flex items-center gap-6">
@@ -6171,31 +6171,31 @@
                 </div>
                 <div class="brand-slider arrow-style-two">
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="200">
-                        <img src="./images/thumbs/brand-img1.png" alt="Image">
+                        <img src="/images/thumbs/brand-img1.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="400">
-                        <img src="./images/thumbs/brand-img2.png" alt="Image">
+                        <img src="/images/thumbs/brand-img2.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="600">
-                        <img src="./images/thumbs/brand-img3.png" alt="Image">
+                        <img src="/images/thumbs/brand-img3.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="800">
-                        <img src="./images/thumbs/brand-img4.png" alt="Image">
+                        <img src="/images/thumbs/brand-img4.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="1000">
-                        <img src="./images/thumbs/brand-img5.png" alt="Image">
+                        <img src="/images/thumbs/brand-img5.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="1200">
-                        <img src="./images/thumbs/brand-img6.png" alt="Image">
+                        <img src="/images/thumbs/brand-img6.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="1400">
-                        <img src="./images/thumbs/brand-img7.png" alt="Image">
+                        <img src="/images/thumbs/brand-img7.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="1600">
-                        <img src="./images/thumbs/brand-img8.png" alt="Image">
+                        <img src="/images/thumbs/brand-img8.png" alt="Image">
                     </div>
                     <div class="brand-item" data-aos="zoom-in" data-aos-duration="1800">
-                        <img src="./images/thumbs/brand-img3.png" alt="Image">
+                        <img src="/images/thumbs/brand-img3.png" alt="Image">
                     </div>
                 </div>
             </div>
@@ -6230,7 +6230,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img20.png" alt="Image">
+                            <img src="/images/thumbs/product-img20.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6266,7 +6266,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img21.png" alt="Image">
+                            <img src="/images/thumbs/product-img21.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6302,7 +6302,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img22.png" alt="Image">
+                            <img src="/images/thumbs/product-img22.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6338,7 +6338,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img23.png" alt="Image">
+                            <img src="/images/thumbs/product-img23.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6374,7 +6374,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img24.png" alt="Image">
+                            <img src="/images/thumbs/product-img24.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6410,7 +6410,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img25.png" alt="Image">
+                            <img src="/images/thumbs/product-img25.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6446,7 +6446,7 @@
                     <div
                         class="product-card px-8 py-16 border border-gray-100 hover-border-main-600 rounded-16 relative transition-2">
                         <a href="product-details.html" class="product-card__thumb flex items-center justify-center">
-                            <img src="./images/thumbs/product-img21.png" alt="Image">
+                            <img src="/images/thumbs/product-img21.png" alt="Image">
                         </a>
                         <div class="product-card__content mt-12">
                             <div class="flex items-center gap-6">
@@ -6546,7 +6546,7 @@
     <div class="newsletter">
         <div class="container container-lg">
             <div class="newsletter-box relative rounded-16 flex items-center gap-16 flex-wrap z-[1]">
-                <img src="./images/bg/newsletter-bg.png" alt="Image"
+                <img src="/images/bg/newsletter-bg.png" alt="Image"
                     class="absolute inset-block-start-0 inset-inline-start-0 z-[-1] w-full h-full opacity-6">
                 <div class="row items-center">
                     <div class="2xl:w-6/12  flex-grow-0 flex-shrink-0 basis-auto">
@@ -6564,11 +6564,11 @@
                         </div>
                     </div>
                     <div class="2xl:w-6/12  flex-grow-0 flex-shrink-0 basis-auto text-center xl:block hidden">
-                        <img src="./images/thumbs/newsletter-img.png" alt="Image" class="wow fadeInUp">
+                        <img src="/images/thumbs/newsletter-img.png" alt="Image" class="wow fadeInUp">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- =============================== Newsletter Section End ============================ -->
-@endsection
+</div>

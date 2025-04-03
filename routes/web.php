@@ -1,37 +1,28 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Clients\PageController;
+use App\Http\Controllers\Clients\LocalizationController;
 
 // Frontend Routes
-Route::get('/', [PageController::class, 'homePage'])->name('home');
-Route::get('/shop', [PageController::class, 'shopPage'])->name('shop');
-Route::get('/product-detail', [PageController::class, 'productDetailPage'])->name('product-detail');
-Route::get('/cart', [PageController::class, 'cartPage'])->name('cart');
-Route::get('/checkout', [PageController::class, 'checkoutPage'])->name('checkout');
-Route::get('/blog', [PageController::class, 'blogPage'])->name('blog');
-Route::get('/blog-detail', [PageController::class, 'blogDetailPage'])->name('blog-detail');
-Route::get('/contact', [PageController::class, 'contactPage'])->name('contact');
-Route::get('/account', [PageController::class, 'accountPage'])->name('account');
-Route::get('/wishlist', [PageController::class, 'wishlistPage'])->name('wishlist');
+Route::get('/', App\Livewire\Clients\HomePage::class)->name('home');
+Route::get('/shop', App\Livewire\Clients\ShopPage::class)->name('shop');
+Route::get('/product-detail/{id}', App\Livewire\Clients\ProductDetailPage::class)->name('product-detail');
+Route::get('/cart', App\Livewire\Clients\CartPage::class)->name('cart');
+Route::get('/checkout', App\Livewire\Clients\CheckoutPage::class)->name('checkout');
+Route::get('/blog', App\Livewire\Clients\BlogPage::class)->name('blog');
+Route::get('/blog-detail', App\Livewire\Clients\BlogDetailPage::class)->name('blog-detail');
+Route::get('/contact', App\Livewire\Clients\ContactPage::class)->name('contact');
+Route::get('/account', App\Livewire\Clients\AccountPage::class)->name('account');
+Route::get('/wishlist', App\Livewire\Clients\WishlistPage::class)->name('wishlist');
 
 // Auth routers
 require_once __DIR__ . '/auth.php';
 
 // Admin routes
-Route::prefix('admin')
-    ->name("admin.")
-    ->middleware([])
+Route::prefix('admin')->name("admin.")->middleware([])
     ->group(function () {
         require_once __DIR__ . '/admin.php';
     });
 
-
-Route::get('/greeting/{locale}', function (string $locale) {
-    if (!in_array($locale, config('app.locales'))) {
-        $locale = config('app.fallback_locale');
-    }
-    $cookie = cookie('locale', $locale, 60 * 24 * 30);
-
-    return redirect()->back()->withCookie($cookie);
-});
+// Localization routes
+Route::get('/greeting/{locale}', [LocalizationController::class, 'setLocale']);

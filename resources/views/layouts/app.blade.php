@@ -18,7 +18,7 @@
     @include('layouts.partials.header')
 
     <!-- Content -->
-    @yield('content')
+    {{ $slot }}
 
     <!-- Footer -->
     @include('layouts.partials.footer')
