@@ -135,7 +135,7 @@
                     <ul
                         class="selectable-text-list on-hover-dropdown common-dropdown common-dropdown--sm max-h-200 scroll-sm px-0 py-8">
                         <li>
-                            <a href="javascript:void(0)"
+                            <a href="/greeting/en"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
                                 <img src="./images/thumbs/flag1.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
@@ -143,43 +143,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"
+                            <a href="/greeting/my"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
                                 <img src="./images/thumbs/flag2.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">
-                                Japan
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag3.png" alt="Image"
-                                    class="w-16 h-12 rounded-4 border border-gray-100">
-                                French
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag4.png" alt="Image"
-                                    class="w-16 h-12 rounded-4 border border-gray-100">
-                                Germany
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag6.png" alt="Image"
-                                    class="w-16 h-12 rounded-4 border border-gray-100">
-                                Bangladesh
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)"
-                                class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
-                                <img src="./images/thumbs/flag5.png" alt="Image"
-                                    class="w-16 h-12 rounded-4 border border-gray-100">
-                                South Korea
+                                Malaysia
                             </a>
                         </li>
                     </ul>

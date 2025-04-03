@@ -5,8 +5,7 @@
     <div class="banner">
         <div class="container container-lg">
             <div class="banner-item rounded-24 overflow-hidden relative arrow-center"
-            style="-webkit-mask-image: url(/images/bg/banner-bg2.png);mask-image: url(/images/bg/banner-bg2.png);"
-            >
+                style="-webkit-mask-image: url(/images/bg/banner-bg2.png);mask-image: url(/images/bg/banner-bg2.png);">
                 <a href="#featureSection"
                     class="scroll-down w-84 h-84 text-center flex items-center justify-center bg-main-600 rounded-[50%] border border-5 text-white border-white !absolute left-[50%] translate-x-[-50%] bottom-0 hover-bg-main-800">
                     <span class="icon line-height-0"><i class="ph ph-caret-double-down"></i></span>
@@ -33,13 +32,12 @@
                                 <a href="shop.html"
                                     class="btn btn-main inline-flex items-center rounded-[50rem] gap-8 wow bounceInUp"
                                     data-wow-duration="1s">
-                                    Explore Shop <span class="icon text-xl flex"><i
-                                            class="ph ph-shopping-cart-simple"></i> </span>
+                                    Explore Shop <span class="icon text-xl flex"><i class="ph ph-shopping-cart-simple"></i>
+                                    </span>
                                 </a>
                             </div>
-                            <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt
-                                data-tilt-max="12" data-tilt-speed="500" data-tilt-perspective="5000"
-                                data-tilt-scale="1.06">
+                            <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt data-tilt-max="12"
+                                data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-scale="1.06">
                                 <img src="./images/thumbs/banner-img1.png" alt="Image">
                             </div>
                         </div>
@@ -53,13 +51,12 @@
                                 <a href="shop.html"
                                     class="btn btn-main inline-flex items-center rounded-[50rem] gap-8 wow bounceIn"
                                     data-wow-duration="1s">
-                                    Explore Shop <span class="icon text-xl flex"><i
-                                            class="ph ph-shopping-cart-simple"></i> </span>
+                                    Explore Shop <span class="icon text-xl flex"><i class="ph ph-shopping-cart-simple"></i>
+                                    </span>
                                 </a>
                             </div>
-                            <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt
-                                data-tilt-max="12" data-tilt-speed="500" data-tilt-perspective="5000"
-                                data-tilt-scale="1.06">
+                            <div class="banner-item__thumb wow bounceIn" data-wow-duration="1s" data-tilt data-tilt-max="12"
+                                data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-scale="1.06">
                                 <img src="./images/thumbs/banner-img3.png" alt="Image">
                             </div>
                         </div>
@@ -68,6 +65,10 @@
             </div>
         </div>
     </div>
+
+    <h1>
+        {{ __('client.test') }} {{ app()->currentLocale() }}
+    </h1>
     <!-- ============================ Banner Section End =============================== -->
     <!-- ============================ Feature Section start =============================== -->
     <div class="feature" id="featureSection">
@@ -534,8 +535,7 @@
                             </div>
                             <div class="mt-12">
                                 <div class="progress w-full  bg-color-three rounded-[50rem] h-4" role="progressbar"
-                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                    aria-valuemax="100">
+                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar bg-main-600 rounded-[50rem]" style="width: 35%"></div>
                                 </div>
                                 <span class="text-gray-900 text-xs font-[500] mt-8">Sold: 18/35</span>
@@ -577,8 +577,7 @@
                             </div>
                             <div class="mt-12">
                                 <div class="progress w-full  bg-color-three rounded-[50rem] h-4" role="progressbar"
-                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                    aria-valuemax="100">
+                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar bg-main-600 rounded-[50rem]" style="width: 35%"></div>
                                 </div>
                                 <span class="text-gray-900 text-xs font-[500] mt-8">Sold: 18/35</span>
@@ -620,8 +619,7 @@
                             </div>
                             <div class="mt-12">
                                 <div class="progress w-full  bg-color-three rounded-[50rem] h-4" role="progressbar"
-                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                    aria-valuemax="100">
+                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar bg-main-600 rounded-[50rem]" style="width: 35%"></div>
                                 </div>
                                 <span class="text-gray-900 text-xs font-[500] mt-8">Sold: 18/35</span>
@@ -663,8 +661,7 @@
                             </div>
                             <div class="mt-12">
                                 <div class="progress w-full  bg-color-three rounded-[50rem] h-4" role="progressbar"
-                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                    aria-valuemax="100">
+                                    aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar bg-main-600 rounded-[50rem]" style="width: 35%"></div>
                                 </div>
                                 <span class="text-gray-900 text-xs font-[500] mt-8">Sold: 18/35</span>
@@ -679,8 +676,7 @@
     <section class="offer pt-80 pb-80">
         <div class="container container-lg">
             <div class="row g-4">
-                <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in"
-                    data-aos-duration="600">
+                <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in" data-aos-duration="600">
                     <div
                         class="offer-card relative rounded-16 bg-main-600 overflow-hidden p-16 flex items-center gap-16 flex-wrap z-[1]">
                         <img src="./images/shape/offer-shape.png" alt="Image"
@@ -707,8 +703,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in"
-                    data-aos-duration="800">
+                <div class="md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto" data-aos="zoom-in" data-aos-duration="800">
                     <div
                         class="offer-card relative rounded-16 bg-main-600 overflow-hidden p-16 flex items-center gap-16 flex-wrap z-[1]">
                         <img src="./images/shape/offer-shape.png" alt="Image"
@@ -766,10 +761,9 @@
                             aria-controls="pills-juices" aria-selected="false">Juices</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link bt-tb-btn-pr" data-target="#pills-vegetables"
-                            id="pills-vegetables-tab" data-bs-toggle="pill" data-bs-target="#pills-vegetables"
-                            type="button" role="tab" aria-controls="pills-vegetables"
-                            aria-selected="false">Vegetables</button>
+                        <button class="nav-link bt-tb-btn-pr" data-target="#pills-vegetables" id="pills-vegetables-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-vegetables" type="button" role="tab"
+                            aria-controls="pills-vegetables" aria-selected="false">Vegetables</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link bt-tb-btn-pr" data-target="#pills-snacks" id="pills-snacks-tab"
@@ -4495,8 +4489,7 @@
                 <div class="custom-2xl:w-3/12  flex-grow-0 flex-shrink-0 basis-auto xl:w-4/12  flex-grow-0 flex-shrink-0 basis-auto md:w-6/12  flex-grow-0 flex-shrink-0 basis-auto"
                     data-aos="zoom-in" data-aos-duration="200">
                     <div class="vendor-card text-center px-16 pb-24"
-                    style="-webkit-mask-image: url(/images/shape/box-shape2.png);mask-image: url(/images/shape/box-shape2.png);"
-                    >
+                        style="-webkit-mask-image: url(/images/shape/box-shape2.png);mask-image: url(/images/shape/box-shape2.png);">
                         <div class="">
                             <img src="./images/thumbs/vendor-logo1.png" alt="Image" class="vendor-card__logo m-12">
                             <h6 class="title mt-32">Organic Market</h6>
