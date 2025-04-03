@@ -2,7 +2,6 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
-use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

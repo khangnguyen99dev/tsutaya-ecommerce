@@ -31,7 +31,7 @@ import "./modules/main";
 document.addEventListener("DOMContentLoaded", function () {
   // Load WOW.js via script tag to ensure proper context
   const wowScript = document.createElement('script');
-  wowScript.src = './js/wow.min.js';
+  wowScript.src = '/js/wow.min.js';
   wowScript.onload = function() {
     // Initialize WOW once the script is loaded
     if (typeof WOW !== 'undefined') {
