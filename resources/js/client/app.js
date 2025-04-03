@@ -12,16 +12,6 @@ import "select2"
 import select2 from 'select2';
 select2();
 
-// wow
-if (typeof window !== 'undefined') {
-  import('wowjs').then((module) => {
-    const WOW = module.default;
-    new WOW({
-      live: false,
-    }).init();
-  });
-}
-
 // aos init
 import AOS from "aos";
 
@@ -39,6 +29,22 @@ import "./modules/scroll-to-top-button"
 import "./modules/main";
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Load WOW.js via script tag to ensure proper context
+  const wowScript = document.createElement('script');
+  wowScript.src = './js/wow.min.js';
+  wowScript.onload = function() {
+    // Initialize WOW once the script is loaded
+    if (typeof WOW !== 'undefined') {
+      new WOW({
+        live: false
+      }).init();
+    }
+  };
+  wowScript.onerror = function() {
+    console.error('Failed to load WOW.js');
+  };
+  document.head.appendChild(wowScript);
+  
   $(".select2").select2();
 
   AOS.init({
