@@ -44,8 +44,9 @@ class Index extends Component
     
     public function render()
     {
-        $books = Book::where('description', 'like', '%' . $this->search . '%')
-                    ->orWhere('author', 'like', '%' . $this->search . '%')
+        $books = Book::where('author', 'like', '%' . $this->search . '%')
+                    ->whereTranslation("title", 'like', '%' . $this->search . '%')
+                    ->whereTranslation("description", 'like', '%' . $this->search . '%')
                     ->orWhere('isbn13', 'like', '%' . $this->search . '%')
                     ->orderBy($this->sortField, $this->sortDirection)
                     ->paginate($this->perPage);

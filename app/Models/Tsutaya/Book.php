@@ -5,11 +5,14 @@ namespace App\Models\Tsutaya;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
-class Book extends Model
+class Book extends Model implements TranslatableContract
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, Translatable;
 
     protected $connection = "mysql";
 
@@ -19,10 +22,11 @@ class Book extends Model
 
     public $timestamps = true;
 
+    public $translatedAttributes = ['title', 'description'];
+
     protected $fillable = [
         "is_isbn_queried",
         "short_sku",
-        "description",
         "plu_description",
         "line",
         "line_description",
@@ -107,7 +111,6 @@ class Book extends Model
         "three_p_size",
         "three_p_grade",
         "dangerous_goods",
-        "image",
         "author",
         "synopsis",
         "publisher",
@@ -128,6 +131,11 @@ class Book extends Model
 
     public function authors(): HasMany
     {
-        return $this->hasMany(BookAuthor::class, "book_id", "id");
+        return $this->hasMany(Author::class, "book_id", "id");
+    }
+
+    public function image(): MorphOne
+    {
+        return $this->morphOne(Image::class, 'imageable');
     }
 }
