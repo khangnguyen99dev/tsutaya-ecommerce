@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - {{ config('app.name') }}</title>
-    
+
     <!-- Styles -->
     @vite(['resources/css/admin/app.css', 'resources/css/admin/main.scss', 'resources/js/admin/app.js'])
     @livewireStyles
@@ -38,27 +38,31 @@
                 <div class="p-4">
                     <ul class="space-y-2">
                         <li>
-                            <a href="{{ route('admin.dashboard') }}" class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                            <a href="{{ route('admin.dashboard') }}"
+                                class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
                                 <i class="ph ph-chart-line mr-3 text-lg"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('admin.books.index') }}" class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
-                                <i class="ph ph-books mr-3 text-lg"></i>
-                                <span>Books</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.categories.index') }}" class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                            <a href="{{ route('admin.categories.index') }}"
+                                class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
                                 <i class="ph ph-tag mr-3 text-lg"></i>
                                 <span>Categories</span>
                             </a>
                         </li>
                         <li>
-                            <a class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                            <a href="{{ route('admin.authors.index') }}"
+                                class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
                                 <i class="ph ph-user-list mr-3 text-lg"></i>
                                 <span>Authors</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('admin.books.index') }}"
+                                class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2">
+                                <i class="ph ph-books mr-3 text-lg"></i>
+                                <span>Books</span>
                             </a>
                         </li>
                     </ul>
@@ -70,11 +74,12 @@
                 {{ $slot }}
             </main>
         </div>
+        <x-toaster-hub />
     </div>
 
     <!-- Scripts -->
     @livewireScripts
-    
+
     <script>
         document.addEventListener('livewire:initialized', () => {
             Livewire.on('showAlert', (message) => {
@@ -83,19 +88,6 @@
         });
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentPath = window.location.pathname;
-            const menuItems = document.querySelectorAll('.bg-gray-800 a');
-            
-            menuItems.forEach(item => {
-                if (currentPath.includes(item.getAttribute('href'))) {
-                    item.classList.add('bg-gray-700', 'text-white');
-                }
-            });
-        });
-    </script>
-
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
-</html> 
+</html>

@@ -143,7 +143,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/greeting/my"
+                            <a href="/greeting/ms"
                                 class="hover-bg-gray-100 text-gray-500 text-xs py-6 px-16 flex items-center gap-8 rounded-none">
                                 <img src="/images/thumbs/flag2.png" alt="Image"
                                     class="w-16 h-12 rounded-4 border border-gray-100">

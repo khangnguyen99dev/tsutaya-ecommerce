@@ -5,6 +5,7 @@ namespace App\Livewire\Admin\Books;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Tsutaya\Book;
+use Masmerise\Toaster\Toaster;
 
 class Index extends Component
 {
@@ -37,16 +38,15 @@ class Index extends Component
         $book = Book::find($id);
         if ($book) {
             $book->delete();
-            session()->flash('message', 'Book deleted successfully.');
-            $this->dispatch('showAlert', 'Book deleted successfully.');
+            Toaster::success('Book deleted successfully.');
         }
     }
     
     public function render()
     {
-        $books = Book::whereTranslation("title", 'like', '%' . $this->search . '%')
+        $books = Book::with(['authors:name'])
+                    ->whereTranslation("title", 'like', '%' . $this->search . '%')
                     ->whereTranslation("description", 'like', '%' . $this->search . '%')
-                    // ->where("author", 'like', '%' . $this->search . '%')
                     ->orWhere('isbn13', 'like', '%' . $this->search . '%')
                     ->orderBy($this->sortField, $this->sortDirection)
                     ->paginate($this->perPage);

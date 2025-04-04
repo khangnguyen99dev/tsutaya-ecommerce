@@ -15,3 +15,8 @@ Route::get('/books/{id}/edit', \App\Livewire\Admin\Books\Edit::class)->name('boo
 Route::get('/categories', \App\Livewire\Admin\Categories\Index::class)->name('categories.index');
 Route::get('/categories/create', \App\Livewire\Admin\Categories\Create::class)->name('categories.create');
 Route::get('/categories/{id}/edit', \App\Livewire\Admin\Categories\Edit::class)->name('categories.edit');
+
+// Authors
+Route::get('/authors', \App\Livewire\Admin\Author\Index::class)->name('authors.index');
+Route::get('/authors/create', \App\Livewire\Admin\Author\Create::class)->name('authors.create');
+Route::get('/authors/{id}/edit', \App\Livewire\Admin\Author\Edit::class)->name('authors.edit');

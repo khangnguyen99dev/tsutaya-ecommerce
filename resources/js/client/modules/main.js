@@ -1030,29 +1030,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // ========================= Color List Js End ===================
 
-  // ========================== Range Slider Js Start =====================
-
-  if ($("#slider-range").length) {
-    $("#slider-range").slider({
-      range: true,
-      min: 0,
-      max: 25,
-      values: [0, 25],
-      slide: function (event, ui) {
-        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-      },
-    });
-
-    $("#amount").val(
-      "$" +
-      $("#slider-range").slider("values", 0) +
-      " - $" +
-      $("#slider-range").slider("values", 1)
-    );
-  }
-
-  // ========================== Range Slider Js End =====================
-
   // ========================== List Grid Js Start ================================
   $(".list-btn").on("click", function () {
     $(".grid-btn").addClass("border-gray-100");
@@ -1273,18 +1250,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $('[class^="slider-"], [class*=" slider-"]').on("afterChange", function () {
     AOS.refreshHard();
   });
-  // ========================= Wow Js Start ===================
-  // ========================= Wow Js End ===================
-
-  // ========================= AOS Animation Js Start ===================
-
-  // ========================= AOS Animation Js End ===================
-
-  // ==========================================
-  //      End Document Ready function
-  // ==========================================
-
-  // ========================= Header Sticky Js Start ==============
+  
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 260) {
       $(".header").addClass("fixed-header");

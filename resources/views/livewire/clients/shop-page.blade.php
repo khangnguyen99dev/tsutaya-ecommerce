@@ -13,8 +13,7 @@
                             <ul class="max-h-540 overflow-y-auto scroll-sm">
                                 @foreach ($categories as $category)
                                     <li class="mb-24 cursor-pointer">
-                                        <a href="javascript:void(0)"
-                                            wire:click="filterByCategory({{ $category->id }})"
+                                        <a href="javascript:void(0)" wire:click="filterByCategory({{ $category->id }})"
                                             class="text-gray-900 hover-text-main-600">
                                             {{ $category->title }}
                                         </a>
@@ -382,13 +381,16 @@
     </section>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        Livewire.on('changePage', function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Livewire.on('changePage', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
+    </script>
+@endpush

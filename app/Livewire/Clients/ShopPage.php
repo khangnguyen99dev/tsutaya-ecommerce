@@ -11,28 +11,38 @@ use Livewire\WithPagination;
 class ShopPage extends Component
 {
     use WithPagination;
-    
+
     public $search = '';
     public $page = 1;
     public $perPage = 10;
     public $sort = 'created_at';
     public $direction = 'desc';
     public $category_id = 0;
+    public $min_price = 0;
+    public $max_price = 10000000;
 
-    protected $queryString = ['search', 'sort', 'direction', 'category_id'];
+    protected $queryString = ['search', 'sort', 'direction', 'category_id', 'min_price', 'max_price'];
+
+    protected $listeners = [
+        'filter-by-price' => 'filterByPrice'
+    ];
 
     public function mount()
     {
         $this->category_id = request()->get('category');
+        $this->min_price = request()->get('min_price', 0);
+        $this->max_price = request()->get('max_price', 10000000);
     }
 
     public function render()
     {
         $query = Book::whereTranslation("title", 'like', '%' . $this->search . '%')
-                    ->orWhereTranslation("description", 'like', '%' . $this->search . '%')
-                    ->orWhere('isbn13', 'like', '%' . $this->search . '%')
-                    ->where('activated', true)
-                    ->orderBy($this->sort, $this->direction);
+            ->orWhereTranslation("description", 'like', '%' . $this->search . '%')
+            ->orWhere('isbn13', 'like', '%' . $this->search . '%')
+            ->where('activated', true)
+            ->where('retail_w_gst', '>=', $this->min_price)
+            ->where('retail_w_gst', '<=', $this->max_price)
+            ->orderBy($this->sort, $this->direction);
 
         if ($this->category_id) {
             $query->whereHas('categories', function ($query) {
@@ -42,8 +52,8 @@ class ShopPage extends Component
 
         $books = $query->paginate($this->perPage, ['*'], 'page', $this->page);
         $categories = Category::limit(10)->latest()->get();
-        $authors = Author::limit(10)->latest()->get();   
-                    
+        $authors = Author::limit(10)->latest()->get();
+
         return view('livewire.clients.shop-page', [
             'books' => $books,
             'categories' => $categories,
@@ -53,7 +63,7 @@ class ShopPage extends Component
 
     public function sortBy($field)
     {
-        if ($this->sort === $field && $this->direction === 'asc') 
+        if ($this->sort === $field && $this->direction === 'asc')
             return;
 
         $this->sort = $field;
@@ -70,11 +80,19 @@ class ShopPage extends Component
     public function filterByCategory($categoryId)
     {
         if ($this->category_id === $categoryId)
-            $this->category_id = 0; 
+            $this->category_id = 0;
         else
             $this->category_id = $categoryId;
 
         $this->dispatch('filterByCategory', categoryId: $categoryId);
     }
-}
 
+    public function filterByPrice($data = null)
+    {
+        if (is_array($data)) {
+            $this->min_price = $data['min'];
+            $this->max_price = $data['max'];
+            $this->resetPage();
+        }
+    }
+}

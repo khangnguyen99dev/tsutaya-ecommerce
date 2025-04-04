@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
     <!-- Styles -->
     @vite(['resources/css/client/app.css', 'resources/css/client/main.scss', 'resources/js/client/app.js'])
+    <script src="/js/wow.min.js"></script>
     @livewireStyles
     @stack('styles')
 </head>

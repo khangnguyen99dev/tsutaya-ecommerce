@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class CategoryTranslation extends Model
 {
-    public $table = 'category_translations';
+
+    protected $table = 'category_translations';
+
     public $timestamps = false;
 
     protected $fillable = [
