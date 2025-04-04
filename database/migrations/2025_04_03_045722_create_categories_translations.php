@@ -15,7 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->unsignedBigInteger('category_id');
             $table->string('locale')->index();
-            $table->string('title')->index();
+            $table->string('name')->index();
 
             $table->unique(['category_id', 'locale']);
         });

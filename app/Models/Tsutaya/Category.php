@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Category extends Model implements TranslatableContract
 {
@@ -15,9 +17,19 @@ class Category extends Model implements TranslatableContract
 
     public $timestamps = true;
 
-    public $translatedAttributes = ['title'];
+    public $translatedAttributes = ['name'];
 
     protected $fillable = [
-
+        "parent_id",
     ];
+
+    public function parent(): BelongsTo
+    {
+        return $this->belongsTo(Category::class, 'parent_id', 'id');
+    }
+
+    public function books(): BelongsToMany
+    {
+        return $this->belongsToMany(Book::class, "book_categories", "category_id", "book_id");
+    }
 }

@@ -9,11 +9,18 @@
     <div class="bg-white shadow-md rounded-lg p-6">
         <form wire:submit="save">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Book Title -->
+                <!-- Book Title EN -->
                 <div class="col-span-2">
-                    <label for="description" class="block text-sm font-medium text-gray-700">Book Title <span class="text-red-600">*</span></label>
-                    <input type="text" id="description" wire:model="description" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
-                    @error('description') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                    <label for="title-en" class="block text-sm font-medium text-gray-700">Book Title (EN) <span class="text-red-600">*</span></label>
+                    <input type="text" id="title-en" wire:model="title.en" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                    @error('title.en') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                </div>
+
+                <!-- Book Title MY -->
+                <div class="col-span-2">
+                    <label for="title-ms" class="block text-sm font-medium text-gray-700">Book Title (MS) <span class="text-red-600">*</span></label>
+                    <input type="text" id="title-ms" wire:model="title.ms" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
+                    @error('title.ms') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                 </div>
                 
                 <!-- SKU and ISBN -->
@@ -43,7 +50,7 @@
                 </div>
                 
                 <!-- Binding and Language -->
-                <div>
+                {{-- <div>
                     <label for="binding" class="block text-sm font-medium text-gray-700">Binding</label>
                     <select id="binding" wire:model="binding" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
                         <option value="">Select binding</option>
@@ -66,7 +73,7 @@
                         <option value="Korean">Korean</option>
                     </select>
                     @error('language') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                </div>
+                </div> --}}
                 
                 <!-- Date Published and Price -->
                 <div>
@@ -76,7 +83,7 @@
                 </div>
                 
                 <div>
-                    <label for="retail_w_gst" class="block text-sm font-medium text-gray-700">Price (VND) <span class="text-red-600">*</span></label>
+                    <label for="retail_w_gst" class="block text-sm font-medium text-gray-700">Price (RM) <span class="text-red-600">*</span></label>
                     <input type="number" id="retail_w_gst" wire:model="retail_w_gst" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50">
                     @error('retail_w_gst') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                 </div>
@@ -93,7 +100,7 @@
                 </div>
                 
                 <div>
-                    <label for="image" class="block text-sm font-medium text-gray-700">Book Cover Image</label>
+                    <label for="image" class="block text-sm font-medium text-gray-700">Book Cover Image <span class="text-red-600">*</span></label>
                     <input type="file" id="image" wire:model="image" class="mt-1 block w-full">
                     @error('image') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                     
@@ -105,7 +112,7 @@
                 </div>
                 
                 <!-- Categories -->
-                {{-- <div class="col-span-2">
+                <div class="col-span-2">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Categories</label>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                         @foreach($categories as $category)
@@ -116,13 +123,19 @@
                         @endforeach
                     </div>
                     @error('selectedCategories') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
-                </div> --}}
+                </div>
                 
-                <!-- Synopsis -->
+                <!-- Description -->
                 <div class="col-span-2">
-                    <label for="synopsis" class="block text-sm font-medium text-gray-700">Synopsis</label>
-                    <textarea id="synopsis" wire:model="synopsis" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
-                    @error('synopsis') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                    <label for="description-en" class="block text-sm font-medium text-gray-700">Description (EN) <span class="text-red-600">*</span></label>
+                    <textarea id="description-en" wire:model="description.en" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
+                    @error('description.en') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                </div>
+
+                <div class="col-span-2">
+                    <label for="description-ms" class="block text-sm font-medium text-gray-700">Description (MS) <span class="text-red-600">*</span></label>
+                    <textarea id="description-ms" wire:model="description.ms" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"></textarea>
+                    @error('description.ms') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                 </div>
             </div>
             

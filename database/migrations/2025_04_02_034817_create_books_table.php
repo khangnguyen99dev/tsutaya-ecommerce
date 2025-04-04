@@ -19,7 +19,6 @@ return new class extends Migration
             $table->longText('synopsis')->nullable();
             $table->string('publisher', 255)->nullable();
             $table->string('binding', 255)->nullable();
-            $table->string('language', 255)->nullable();
             $table->string('isbn13', 255)->nullable();
             $table->date('date_published')->nullable();
             $table->tinyInteger('is_isbn_queried')->default(0);
@@ -36,11 +35,6 @@ return new class extends Migration
             $table->string('group_description', 100)->nullable();
             $table->string('department', 100)->nullable();
             $table->string('department_description', 100)->nullable();
-            $table->string('category', 100)->nullable();
-            $table->string('category_description', 100)->nullable();
-            $table->string('sub_category', 100)->nullable();
-            $table->string('sub_category_description', 100)->nullable();
-            $table->string('category_2', 100)->nullable();
             
             // Supplier info
             $table->string('first_create_supplier', 255)->nullable();
@@ -119,7 +113,6 @@ return new class extends Migration
             $table->string('three_p_size', 100)->nullable();
             $table->string('three_p_grade', 100)->nullable();
             $table->string('dangerous_goods', 100)->nullable();
-            $table->string('author', 255)->nullable();
             
             $table->timestamps();
             $table->softDeletes();

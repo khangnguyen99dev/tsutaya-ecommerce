@@ -103,7 +103,7 @@
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $book->author }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $book->isbn13 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($book->retail_w_gst, 0) }} đ</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($book->retail_w_gst, 0) }} RM</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $book->activated ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
                                 {{ $book->activated ? 'Active' : 'Inactive' }}

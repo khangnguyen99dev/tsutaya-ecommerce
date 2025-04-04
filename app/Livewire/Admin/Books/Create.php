@@ -5,7 +5,7 @@ namespace App\Livewire\Admin\Books;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\Models\Tsutaya\Book;
-// use App\Models\Tsutaya\Category;
+use App\Models\Tsutaya\Category;
 // use App\Models\Tsutaya\Publisher;
 // use App\Models\Tsutaya\Author;
 use Illuminate\Support\Str;
@@ -15,15 +15,19 @@ class Create extends Component
     use WithFileUploads;
     
     // Book basic info
-    public $description;
+    public $title = [
+        'en' => '',
+        'ms' => '',
+    ];
+    public $description = [
+        'en' => '',
+        'ms' => '',
+    ];
     public $short_sku;
+    public $isbn13;
     public $author;
     public $publisher;
-    public $binding;
-    public $language;
-    public $isbn13;
     public $date_published;
-    public $synopsis;
     
     // Book pricing
     public $retail_w_gst;
@@ -38,7 +42,7 @@ class Create extends Component
     public function render()
     {
         return view('livewire.admin.books.create', [
-            // 'categories' => Category::orderBy('name')->get(),
+            'categories' => Category::orderByTranslation('name')->get() ?? [],
             // 'publishers' => Publisher::orderBy('name')->get(),
             // 'authors' => Author::orderBy('name')->get(),
         ])->layout('layouts.admin');
@@ -51,11 +55,8 @@ class Create extends Component
             'short_sku' => 'nullable|string|max:50',
             'author' => 'required|string|max:255',
             'publisher' => 'nullable|string|max:255',
-            'binding' => 'nullable|string|max:100',
-            'language' => 'nullable|string|max:100',
             'isbn13' => 'nullable|string|max:13',
             'date_published' => 'nullable|date',
-            'synopsis' => 'nullable|string',
             'retail_w_gst' => 'required|numeric|min:0',
             'image' => 'nullable|image|max:2048', // max 2MB
             'selectedCategories' => 'nullable|array'
@@ -73,11 +74,8 @@ class Create extends Component
             'short_sku' => $this->short_sku ?? Str::slug($this->description),
             'author' => $this->author,
             'publisher' => $this->publisher,
-            'binding' => $this->binding,
-            'language' => $this->language,
             'isbn13' => $this->isbn13,
             'date_published' => $this->date_published,
-            'synopsis' => $this->synopsis,
             'retail_w_gst' => $this->retail_w_gst,
             'activated' => $this->activated,
             'image' => $imagePath,
