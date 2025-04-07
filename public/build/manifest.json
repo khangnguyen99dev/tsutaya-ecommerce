@@ -1,16 +1,10 @@
 {
-  "_jquery-CMRL2V9f.js": {
-    "file": "assets/jquery-CMRL2V9f.js",
+  "_jquery-BQXThELV.js": {
+    "file": "assets/jquery-BQXThELV.js",
     "name": "jquery"
   },
-  "node_modules/wowjs/dist/wow.js": {
-    "file": "assets/wow-psmbVWZF.js",
-    "name": "wow",
-    "src": "node_modules/wowjs/dist/wow.js",
-    "isDynamicEntry": true
-  },
   "resources/css/admin/app.css": {
-    "file": "assets/app-CApS5Wht.css",
+    "file": "assets/app-BUjBtyaH.css",
     "src": "resources/css/admin/app.css",
     "isEntry": true
   },
@@ -21,7 +15,7 @@
     "isEntry": true
   },
   "resources/css/client/app.css": {
-    "file": "assets/app-BQhIp8Kw.css",
+    "file": "assets/app-_2d3bYx2.css",
     "src": "resources/css/client/app.css",
     "isEntry": true
   },
@@ -32,24 +26,24 @@
     "isEntry": true
   },
   "resources/js/admin/app.js": {
-    "file": "assets/app-CorKQHJP.js",
+    "file": "assets/app-X5cjKhJI.js",
     "name": "app",
     "src": "resources/js/admin/app.js",
     "isEntry": true,
     "imports": [
-      "_jquery-CMRL2V9f.js"
+      "_jquery-BQXThELV.js"
+    ],
+    "css": [
+      "assets/app-DBaXMvZp.css"
     ]
   },
   "resources/js/client/app.js": {
-    "file": "assets/app-Bt8wu2oe.js",
+    "file": "assets/app-CkDPRfWU.js",
     "name": "app",
     "src": "resources/js/client/app.js",
     "isEntry": true,
     "imports": [
-      "_jquery-CMRL2V9f.js"
-    ],
-    "dynamicImports": [
-      "node_modules/wowjs/dist/wow.js"
+      "_jquery-BQXThELV.js"
     ]
   }
 }
