@@ -2,97 +2,91 @@
 
 namespace App\Livewire\Admin\Books;
 
+use App\Models\Tsutaya\Author;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\Models\Tsutaya\Book;
-// use App\Models\Tsutaya\Category;
-// use App\Models\Tsutaya\Publisher;
-// use App\Models\Tsutaya\Author;
+use App\Models\Tsutaya\Category;
 use Illuminate\Support\Str;
+use Masmerise\Toaster\Toaster;
 
 class Create extends Component
 {
     use WithFileUploads;
     
-    // Book basic info
-    public $description;
+    public $title = [
+        'en' => '',
+        'ms' => '',
+    ];
+    public $description = [
+        'en' => '',
+        'ms' => '',
+    ];
     public $short_sku;
-    public $author;
-    public $publisher;
-    public $binding;
-    public $language;
     public $isbn13;
+    public $publisher;
     public $date_published;
-    public $synopsis;
-    
-    // Book pricing
+    public $author_id;
+
     public $retail_w_gst;
     public $activated = true;
     
-    // Categories
     public $selectedCategories = [];
     
-    // Image upload
     public $image;
     
     public function render()
     {
+        $categories = Category::all();  
+        $authors = Author::all();
+
         return view('livewire.admin.books.create', [
-            // 'categories' => Category::orderBy('name')->get(),
-            // 'publishers' => Publisher::orderBy('name')->get(),
-            // 'authors' => Author::orderBy('name')->get(),
+            'categories' => $categories ?? [],
+            'authors' => $authors ?? [],
         ])->layout('layouts.admin');
     }
     
     public function save()
     {
         $this->validate([
-            'description' => 'required|string|max:255',
-            'short_sku' => 'nullable|string|max:50',
-            'author' => 'required|string|max:255',
+            'title.*' => 'required|string|max:255',
+            'description.*' => 'required|string|max:255',
+            'short_sku' => 'required|string|max:50',
             'publisher' => 'nullable|string|max:255',
-            'binding' => 'nullable|string|max:100',
-            'language' => 'nullable|string|max:100',
             'isbn13' => 'nullable|string|max:13',
             'date_published' => 'nullable|date',
-            'synopsis' => 'nullable|string',
             'retail_w_gst' => 'required|numeric|min:0',
-            'image' => 'nullable|image|max:2048', // max 2MB
-            'selectedCategories' => 'nullable|array'
+            'image' => 'nullable|image|max:2048',
+            'selectedCategories' => 'nullable|array',
+            'author_id' => 'required|numeric',
         ]);
         
-        // Handle image upload
         $imagePath = null;
         if ($this->image) {
             $imagePath = $this->image->store('books', 'public');
         }
         
-        // Create the book
         $book = Book::create([
-            'description' => $this->description,
+            'en' => [
+                'title' => $this->title['en'],
+                'description' => $this->description['en'],
+            ],
+            'ms' => [
+                'title' => $this->title['ms'],
+                'description' => $this->description['ms'],
+            ],
             'short_sku' => $this->short_sku ?? Str::slug($this->description),
-            'author' => $this->author,
             'publisher' => $this->publisher,
-            'binding' => $this->binding,
-            'language' => $this->language,
             'isbn13' => $this->isbn13,
             'date_published' => $this->date_published,
-            'synopsis' => $this->synopsis,
             'retail_w_gst' => $this->retail_w_gst,
             'activated' => $this->activated,
             'image' => $imagePath,
         ]);
+        $book->authors()->sync([$this->author_id]);
+        $book->categories()->sync($this->selectedCategories);
         
-        // Attach categories
-        if (!empty($this->selectedCategories)) {
-            foreach ($this->selectedCategories as $categoryId) {
-                if ($categoryId) {
-                    $book->categories()->attach($categoryId);
-                }
-            }
-        }
-        
-        $this->dispatch('showAlert', 'Book created successfully');
+        Toaster::success('Book created successfully');
         return redirect()->route('admin.books.index');
     }
 }

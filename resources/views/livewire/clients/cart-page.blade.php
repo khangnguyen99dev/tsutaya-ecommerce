@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- ========================= Breadcrumb End =============================== -->
     <!-- ================================ Cart Section Start ================================ -->
     <section class="cart py-80">
@@ -31,7 +30,7 @@
                                             <div class="table-product flex items-center gap-24">
                                                 <a href="product-details-two.html"
                                                     class="table-product__thumb border border-gray-100 rounded-8 flex items-center justify-center ">
-                                                    <img src="./images/thumbs/product-two-img1.png" alt="Image">
+                                                    <img src="/images/thumbs/product-two-img1.png" alt="Image">
                                                 </a>
                                                 <div class="table-product__content text-start">
                                                     <h6 class="title text-lg font-[600] mb-8">
@@ -94,7 +93,7 @@
                                             <div class="table-product flex items-center gap-24">
                                                 <a href="product-details-two.html"
                                                     class="table-product__thumb border border-gray-100 rounded-8 flex items-center justify-center ">
-                                                    <img src="./images/thumbs/product-two-img2.png" alt="Image">
+                                                    <img src="/images/thumbs/product-two-img2.png" alt="Image">
                                                 </a>
                                                 <div class="table-product__content text-start">
                                                     <h6 class="title text-lg font-[600] mb-8">
@@ -157,7 +156,7 @@
                                             <div class="table-product flex items-center gap-24">
                                                 <a href="product-details-two.html"
                                                     class="table-product__thumb border border-gray-100 rounded-8 flex items-center justify-center ">
-                                                    <img src="./images/thumbs/product-two-img3.png" alt="Image">
+                                                    <img src="/images/thumbs/product-two-img3.png" alt="Image">
                                                 </a>
                                                 <div class="table-product__content text-start">
                                                     <h6 class="title text-lg font-[600] mb-8">
@@ -220,7 +219,7 @@
                                             <div class="table-product flex items-center gap-24">
                                                 <a href="product-details-two.html"
                                                     class="table-product__thumb border border-gray-100 rounded-8 flex items-center justify-center ">
-                                                    <img src="./images/thumbs/product-two-img4.png" alt="Image">
+                                                    <img src="/images/thumbs/product-two-img4.png" alt="Image">
                                                 </a>
                                                 <div class="table-product__content text-start">
                                                     <h6 class="title text-lg font-[600] mb-8">
@@ -372,4 +371,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>

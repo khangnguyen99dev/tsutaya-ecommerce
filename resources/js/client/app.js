@@ -12,16 +12,6 @@ import "select2"
 import select2 from 'select2';
 select2();
 
-// wow
-if (typeof window !== 'undefined') {
-  import('wowjs').then((module) => {
-    const WOW = module.default;
-    new WOW({
-      live: false,
-    }).init();
-  });
-}
-
 // aos init
 import AOS from "aos";
 
@@ -39,6 +29,10 @@ import "./modules/scroll-to-top-button"
 import "./modules/main";
 
 document.addEventListener("DOMContentLoaded", function () {
+  new WOW({
+    live: false
+  }).init();
+
   $(".select2").select2();
 
   AOS.init({

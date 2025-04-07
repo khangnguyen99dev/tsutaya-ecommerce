@@ -8,6 +8,6 @@ class HomePage extends Component
 {
     public function render()
     {
-        return view('livewire.clients.homepage');
+        return view('livewire.clients.homepage')->layout('layouts.app');
     }
 }

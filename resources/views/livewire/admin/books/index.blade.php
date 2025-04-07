@@ -41,9 +41,9 @@
                         </button>
                     </th>
                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        <button wire:click="sortBy('description')" class="flex items-center">
+                        <button wire:click="sortBy('title')" class="flex items-center">
                             Title
-                            @if ($sortField === 'description')
+                            @if ($sortField === 'title')
                                 <i class="ph {{ $sortDirection === 'asc' ? 'ph-sort-ascending' : 'ph-sort-descending' }} ml-1"></i>
                             @endif
                         </button>
@@ -98,12 +98,12 @@
                                         <i class="ph ph-book text-gray-400"></i>
                                     </div>
                                 @endif
-                                <span>{{ $book->description }}</span>
+                                <span>{{ $book->title }}</span>
                             </div>
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $book->author }}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $book->authors->first()->name  ?? ''}}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $book->isbn13 }}</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($book->retail_w_gst, 0) }} đ</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ number_format($book->retail_w_gst, 0) }} RM</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $book->activated ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800' }}">
                                 {{ $book->activated ? 'Active' : 'Inactive' }}

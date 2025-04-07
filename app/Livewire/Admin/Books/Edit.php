@@ -2,138 +2,135 @@
 
 namespace App\Livewire\Admin\Books;
 
+use App\Models\Tsutaya\Author;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\Models\Tsutaya\Book;
-// use App\Models\Tsutaya\Category;
-// use App\Models\Tsutaya\Publisher;
-// use App\Models\Tsutaya\Author;
+use App\Models\Tsutaya\Category;
 use Illuminate\Support\Facades\Storage;
+use Masmerise\Toaster\Toaster;
 
 class Edit extends Component
 {
     use WithFileUploads;
-    
+
     public $bookId;
-    
-    // Book basic info
+
+    public $title;
     public $description;
     public $short_sku;
-    public $author;
     public $publisher;
-    public $binding;
-    public $language;
     public $isbn13;
     public $date_published;
-    public $synopsis;
-    
-    // Book pricing
+    public $author_id;
     public $retail_w_gst;
     public $activated;
-    
-    // Categories
-    public $selectedCategories = [];
-    
-    // Image
+
+    public $categoriesSelected = [];
     public $image;
     public $existingImage;
     public $newImage;
-    
+
+    protected $listeners = ['categoriesSelected' => 'setCategories'];
+
+    public function setCategories($categories)
+    {
+        $this->categoriesSelected = $categories;
+    }
+
     public function mount($id)
     {
         $this->bookId = $id;
         $book = Book::findOrFail($id);
-        
-        // Load book data
-        $this->description = $book->description;
+
+        $this->title['en'] = $book->getTranslationOrNew('en')->title;
+        $this->title['ms'] = $book->getTranslationOrNew('ms')->title;
+        $this->description['en'] = $book->getTranslationOrNew('en')->description;
+        $this->description['ms'] = $book->getTranslationOrNew('ms')->description;
         $this->short_sku = $book->short_sku;
-        $this->author = $book->author;
         $this->publisher = $book->publisher;
-        $this->binding = $book->binding;
-        $this->language = $book->language;
         $this->isbn13 = $book->isbn13;
         $this->date_published = $book->date_published;
-        $this->synopsis = $book->synopsis;
         $this->retail_w_gst = $book->retail_w_gst;
         $this->activated = $book->activated;
         $this->existingImage = $book->image;
-        
-        // Load categories
-        $this->selectedCategories = $book->categories->pluck('id')->toArray();
+        $this->categoriesSelected = $book->categories->pluck('id')->toArray();
+        $this->author_id = $book->authors->first()->id ?? 0;
     }
-    
+
     public function render()
     {
+        $categories = Category::all();
+        $authors = Author::all();
+
         return view('livewire.admin.books.edit', [
-            // 'categories' => Category::orderBy('name')->get(),
-            // 'publishers' => Publisher::orderBy('name')->get(),
-            // 'authors' => Author::orderBy('name')->get(),
+            'categories' => $categories ?? [],
+            'authors' => $authors ?? [],
         ])->layout('layouts.admin');
     }
-    
-    public function update()
+
+    public function save()
     {
         $this->validate([
-            'description' => 'required|string|max:255',
+            'title.*' => 'required|string|max:255',
+            'description.*' => 'required|string|max:255',
             'short_sku' => 'nullable|string|max:50',
-            'author' => 'required|string|max:255',
             'publisher' => 'nullable|string|max:255',
-            'binding' => 'nullable|string|max:100',
-            'language' => 'nullable|string|max:100',
             'isbn13' => 'nullable|string|max:13',
             'date_published' => 'nullable|date',
-            'synopsis' => 'nullable|string',
             'retail_w_gst' => 'required|numeric|min:0',
-            'newImage' => 'nullable|image|max:2048', // max 2MB
-            'selectedCategories' => 'nullable|array'
+            'newImage' => 'nullable|image|max:2048',
+            'categoriesSelected' => 'required|array',
+            'author_id' => 'required|numeric',
         ]);
-        
+
         $book = Book::findOrFail($this->bookId);
-        
-        // Handle image upload
+
         if ($this->newImage) {
-            // Delete old image if exists
-            if ($this->existingImage && Storage::disk('public')->exists($this->existingImage)) {
-                Storage::disk('public')->delete($this->existingImage);
+            if ($this->existingImage) {
+                $book->image()->delete();
             }
-            
-            // Store new image
-            $imagePath = $this->newImage->store('books', 'public');
-            $book->image = $imagePath;
+            $book->image()->create([
+                'url' => $this->newImage->store('books', 'public'),
+            ]);
         }
-        
-        // Update book data
-        $book->description = $this->description;
+
         $book->short_sku = $this->short_sku;
-        $book->author = $this->author;
         $book->publisher = $this->publisher;
-        $book->binding = $this->binding;
-        $book->language = $this->language;
         $book->isbn13 = $this->isbn13;
         $book->date_published = $this->date_published;
-        $book->synopsis = $this->synopsis;
         $book->retail_w_gst = $this->retail_w_gst;
         $book->activated = $this->activated;
+        $book->fill([
+            'en' => [
+                'title' => $this->title['en'],
+                'description' => $this->description['en'],
+            ],
+            'ms' => [
+                'title' => $this->title['ms'],
+                'description' => $this->description['ms'],
+            ],
+        ]);
         $book->save();
-        
-        // Update categories
-        $book->categories()->sync($this->selectedCategories);
-        
-        $this->dispatch('showAlert', 'Book updated successfully');
+
+        $book->categories()->sync($this->categoriesSelected);
+        $book->authors()->sync($this->author_id);
+
+        Toaster::success('Book updated successfully');
         return redirect()->route('admin.books.index');
     }
-    
+
     public function removeImage()
     {
         if ($this->existingImage && Storage::disk('public')->exists($this->existingImage)) {
             Storage::disk('public')->delete($this->existingImage);
         }
-        
+
         $book = Book::findOrFail($this->bookId);
         $book->image = null;
         $book->save();
-        
+
         $this->existingImage = null;
-        $this->dispatch('showAlert', 'Image removed successfully');
+        Toaster::success('Image removed successfully');
     }
 }

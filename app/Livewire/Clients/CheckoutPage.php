@@ -8,6 +8,6 @@ class CheckoutPage extends Component
 {
     public function render()
     {
-        return view('livewire.clients.checkout-page');
+        return view('livewire.clients.checkout-page')->layout('layouts.app');
     }
 }

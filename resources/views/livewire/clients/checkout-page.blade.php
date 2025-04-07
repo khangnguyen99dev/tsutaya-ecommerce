@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- ========================= Breadcrumb End =============================== -->
     <!-- ================================= Checkout Page Start ===================================== -->
     <section class="checkout py-80">
@@ -231,4 +230,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>

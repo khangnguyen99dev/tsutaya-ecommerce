@@ -4,12 +4,15 @@ namespace App\Models\Tsutaya;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Book extends Model
+class Book extends Model implements TranslatableContract
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, Translatable;
 
     protected $connection = "mysql";
 
@@ -19,10 +22,11 @@ class Book extends Model
 
     public $timestamps = true;
 
+    public $translatedAttributes = ['title', 'description'];
+
     protected $fillable = [
         "is_isbn_queried",
         "short_sku",
-        "description",
         "plu_description",
         "line",
         "line_description",
@@ -32,11 +36,6 @@ class Book extends Model
         "group_description",
         "department",
         "department_description",
-        "category",
-        "category_description",
-        "sub_category",
-        "sub_category_description",
-        "category_2",
         "first_create_supplier",
         "contract_no",
         "supplier_name",
@@ -107,27 +106,34 @@ class Book extends Model
         "three_p_size",
         "three_p_grade",
         "dangerous_goods",
-        "image",
-        "author",
         "synopsis",
         "publisher",
         "binding", 
-        "language",
         "isbn13",
         "date_published"
     ];
 
-    protected $appends = [
-        "signed_image_url",
-    ];
+    // protected $appends = [
+    //     "signed_image_url",
+    // ];
 
     // public function getSignedImageUrlAttribute(): string
     // {
     //     return empty($this->image) ? asset('assets/images/blank.png') : FileService::getSignedURL($this->image);
     // }
 
-    public function authors(): HasMany
+    public function authors(): BelongsToMany
     {
-        return $this->hasMany(BookAuthor::class, "book_id", "id");
+        return $this->belongsToMany(Author::class, "book_authors", "book_id", "author_id");
+    }
+
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(Category::class, "book_categories", "book_id", "category_id");
+    }
+
+    public function image(): MorphOne
+    {
+        return $this->morphOne(Image::class, 'imageable');
     }
 }

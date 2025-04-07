@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<div>
     <!-- =============================== Account Section Start =========================== -->
     <section class="account py-80">
         <div class="container container-lg">
@@ -143,4 +142,4 @@
             </div>
         </div>
     </section>
-@endsection
+</div>
